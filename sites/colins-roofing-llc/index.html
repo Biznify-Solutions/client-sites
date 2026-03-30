@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colin's Roofing LLC - Expert Roofing Services in Buffalo Grove, ST | Licensed & Insured</title>
-    <meta name="description" content="Colin's Roofing LLC provides professional roofing repair, installation, and emergency services in Buffalo Grove, ST. Licensed, insured, and locally owned. Free estimates available.">
+    <title>Colins Roofing LLC - Expert Roofing Services in Buffalo Grove, ST | Licensed & Insured</title>
+    <meta name="description" content="Trusted roofing experts in Buffalo Grove, ST. Licensed, insured roofing contractor offering repair, installation, maintenance, inspection & emergency services. Free estimates available.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Colin's Roofing LLC",
-        "description": "Professional roofing services including repair, installation, maintenance, inspection, emergency service, and consultation in Buffalo Grove and surrounding areas.",
+        "name": "Colins Roofing LLC",
+        "description": "Professional roofing services in Buffalo Grove and surrounding areas",
         "telephone": "+18476513214",
         "address": {
             "@type": "PostalAddress",
@@ -22,7 +22,9 @@
             "addressRegion": "ST"
         },
         "areaServed": "Buffalo Grove and surrounding areas",
-        "serviceType": ["General Repair", "Installation", "Maintenance", "Inspection", "Emergency Service", "Consultation"]
+        "serviceType": ["General Repair", "Installation", "Maintenance", "Inspection", "Emergency Service", "Consultation"],
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 08:00-18:00"
     }
     </script>
 
@@ -44,9 +46,9 @@
             padding-bottom: 70px;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4 {
             font-family: 'Outfit', sans-serif;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
         }
 
@@ -58,13 +60,12 @@
 
         .btn {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 16px 32px;
             background: #e74c3c;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -75,73 +76,45 @@
             transform: translateY(-2px);
         }
 
-        .btn-secondary {
+        .btn-outline {
             background: transparent;
-            border: 2px solid #e74c3c;
-            color: #e74c3c;
-        }
-
-        .btn-secondary:hover {
-            background: #e74c3c;
+            border: 2px solid white;
             color: white;
-            transform: translateY(-2px);
         }
 
-        .section {
-            padding: 60px 0;
+        .btn-outline:hover {
+            background: white;
+            color: #1a1a2e;
         }
 
-        .section-gray {
-            background: #f8f9fa;
-        }
-
-        /* Hero Section */
+        /* HERO SECTION */
         .hero {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
+            padding: 120px 0;
             text-align: center;
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('https://placehold.co/1920x1080/1a1a2e/ffffff?text=Roofing+Background') center/cover;
-            opacity: 0.1;
-            z-index: 0;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            font-weight: 700;
+            text-transform: capitalize;
         }
 
-        .hero .subtitle {
-            font-size: 1.3rem;
+        .hero-subtitle {
+            font-size: 1.4rem;
             margin-bottom: 40px;
             opacity: 0.9;
         }
 
-        .hero-buttons {
+        .hero-cta {
             display: flex;
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        /* Trust Bar */
+        /* TRUST BAR */
         .trust-bar {
             background: #e74c3c;
             color: white;
@@ -149,56 +122,67 @@
         }
 
         .trust-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .trust-item {
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 10px;
+            font-weight: 600;
         }
 
-        .trust-item .icon {
+        .trust-item span {
             font-size: 1.5rem;
         }
 
-        /* About Section */
-        .about {
-            text-align: center;
+        /* SECTIONS */
+        .section {
+            padding: 80px 0;
         }
 
-        .about h2 {
+        .section-alt {
+            background: #f8f9fa;
+        }
+
+        .section h2 {
             font-size: 2.5rem;
-            margin-bottom: 30px;
+            text-align: center;
+            margin-bottom: 50px;
             color: #1a1a2e;
         }
 
+        /* ABOUT */
         .about-content {
             max-width: 800px;
             margin: 0 auto;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
+            text-align: center;
         }
 
-        /* Services Grid */
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* SERVICES */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-top: 40px;
+            margin-bottom: 50px;
         }
 
         .service-card {
             background: white;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             text-align: center;
+            transition: transform 0.3s ease;
         }
 
         .service-card:hover {
@@ -211,131 +195,128 @@
             color: #1a1a2e;
         }
 
-        /* Why Choose Us */
+        .service-card p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* WHY CHOOSE US */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
-            margin-top: 40px;
         }
 
-        .feature-block {
+        .feature-item {
             text-align: center;
         }
 
-        .feature-block .icon {
+        .feature-icon {
             font-size: 3rem;
             color: #e74c3c;
             margin-bottom: 20px;
         }
 
-        .feature-block h3 {
+        .feature-item h3 {
             font-size: 1.3rem;
             margin-bottom: 15px;
             color: #1a1a2e;
         }
 
-        /* Service Areas */
-        .area-tags {
+        /* SERVICE AREAS */
+        .areas-pills {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
-            margin-top: 30px;
             justify-content: center;
+            margin-bottom: 30px;
         }
 
-        .area-tag {
+        .area-pill {
+            padding: 10px 20px;
             background: #fdecea;
             color: #e74c3c;
-            padding: 8px 16px;
-            border-radius: 25px;
             text-decoration: none;
-            font-weight: 500;
+            border-radius: 25px;
+            font-weight: 600;
             transition: all 0.3s ease;
-            border: 1px solid #e74c3c;
         }
 
-        .area-tag:hover {
+        .area-pill:hover {
             background: #e74c3c;
             color: white;
         }
 
-        /* How It Works */
-        .steps-grid {
+        /* HOW IT WORKS */
+        .steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            margin-top: 40px;
         }
 
         .step {
             text-align: center;
-            position: relative;
         }
 
         .step-number {
+            display: inline-block;
             width: 60px;
             height: 60px;
             background: #e74c3c;
             color: white;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            line-height: 60px;
             font-size: 1.5rem;
-            font-weight: 600;
-            margin: 0 auto 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
 
         .step h3 {
-            font-size: 1.3rem;
             margin-bottom: 15px;
             color: #1a1a2e;
         }
 
         /* FAQ */
-        .faq {
+        .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .faq details {
+        .faq-item {
             margin-bottom: 20px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 0;
             overflow: hidden;
         }
 
-        .faq summary {
+        .faq-item summary {
             padding: 20px;
             background: #f8f9fa;
             cursor: pointer;
-            font-weight: 500;
-            font-size: 1.1rem;
+            font-weight: 600;
             color: #1a1a2e;
         }
 
-        .faq details[open] summary {
+        .faq-item[open] summary {
             background: #fdecea;
             color: #e74c3c;
         }
 
-        .faq-content {
+        .faq-item p {
             padding: 20px;
             background: white;
         }
 
-        /* Final CTA */
+        /* FINAL CTA */
         .final-cta {
-            background: #1a1a2e;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
-            text-align: center;
             padding: 80px 0;
+            text-align: center;
         }
 
         .final-cta h2 {
-            font-size: 2.5rem;
+            color: white;
             margin-bottom: 20px;
         }
 
@@ -345,23 +326,18 @@
             opacity: 0.9;
         }
 
-        .final-buttons {
+        .cta-buttons {
             display: flex;
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        .final-buttons .btn {
-            font-size: 1.1rem;
-            padding: 16px 32px;
-        }
-
-        /* Footer */
+        /* FOOTER */
         .footer {
-            background: #f8f9fa;
-            padding: 40px 0;
-            text-align: center;
+            background: #1a1a2e;
+            color: white;
+            padding: 50px 0 20px;
         }
 
         .footer-content {
@@ -369,63 +345,58 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 30px;
-            text-align: left;
         }
 
-        .footer-section h3 {
-            color: #1a1a2e;
-            margin-bottom: 15px;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 8px;
-        }
-
-        .footer-section a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        .footer-section a:hover {
+        .footer h3 {
+            margin-bottom: 20px;
             color: #e74c3c;
         }
 
-        /* Sticky Bottom Bar */
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #e74c3c;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+
+        /* STICKY BAR */
         .sticky-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: #1a1a2e;
-            padding: 15px;
+            background: white;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            padding: 15px 20px;
             z-index: 9999;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-        }
-
-        .sticky-buttons {
             display: flex;
             gap: 15px;
-            max-width: 500px;
-            margin: 0 auto;
+            justify-content: center;
         }
 
-        .sticky-buttons .btn {
+        .sticky-bar .btn {
             flex: 1;
-            margin: 0;
+            max-width: 200px;
+            text-align: center;
         }
 
-        /* Responsive Design */
+        /* RESPONSIVE */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
             
-            .section {
-                padding: 50px 0;
+            .section h2 {
+                font-size: 2.2rem;
             }
         }
 
@@ -435,44 +406,27 @@
             }
             
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
+            .hero-subtitle {
+                font-size: 1.1rem;
             }
             
-            .hero-buttons .btn {
-                width: 100%;
-                max-width: 300px;
+            .section {
+                padding: 60px 0;
             }
             
             .trust-items {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
+                justify-content: center;
+            }
+            
+            .trust-item {
+                font-size: 0.9rem;
             }
             
             .services-grid {
                 grid-template-columns: 1fr;
-            }
-            
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .final-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .final-buttons .btn {
-                width: 100%;
-                max-width: 300px;
             }
         }
 
@@ -481,309 +435,274 @@
                 padding: 0 15px;
             }
             
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .trust-items {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .area-tags {
-                justify-content: center;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .sticky-buttons {
+            .hero-cta {
                 flex-direction: column;
-                gap: 10px;
+                align-items: center;
             }
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .mb-30 {
-            margin-bottom: 30px;
+            
+            .btn {
+                padding: 14px 28px;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .sticky-bar {
+                padding: 10px 15px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Colin's Roofing LLC</h1>
-                <p class="subtitle">Buffalo Grove's Trusted Roofing Experts - Quality Work, Fair Prices, Guaranteed Results</p>
-                <div class="hero-buttons">
-                    <a href="tel:+18476513214" class="btn">📞 Call Now</a>
-                    <a href="tel:+18476513214" class="btn btn-secondary">📋 Free Estimate</a>
-                </div>
+            <h1>Colins Roofing LLC</h1>
+            <p class="hero-subtitle">Buffalo Grove's Most Trusted Roofing Contractors - Quality Work, Fair Prices</p>
+            <div class="hero-cta">
+                <a href="tel:+18476513214" class="btn">📞 Call Now</a>
+                <a href="tel:+18476513214" class="btn btn-outline">Get Free Estimate</a>
             </div>
         </div>
     </section>
 
-    <!-- Trust Bar -->
+    <!-- TRUST BAR -->
     <section class="trust-bar">
         <div class="container">
             <div class="trust-items">
                 <div class="trust-item">
-                    <span class="icon">🛡️</span>
+                    <span>🛡️</span>
                     <span>Licensed & Insured</span>
                 </div>
                 <div class="trust-item">
-                    <span class="icon">💰</span>
+                    <span>💰</span>
                     <span>Free Estimates</span>
                 </div>
                 <div class="trust-item">
-                    <span class="icon">⭐</span>
+                    <span>⭐</span>
                     <span>5-Star Rated</span>
                 </div>
                 <div class="trust-item">
-                    <span class="icon">🏠</span>
+                    <span>🏠</span>
                     <span>Locally Owned</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section">
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
         <div class="container">
-            <div class="about text-center">
-                <h2>Your Local Home Services Experts in Buffalo Grove</h2>
-                <div class="about-content">
-                    <p>For over a decade, Colin's Roofing LLC has been Buffalo Grove's most trusted roofing contractor. We specialize in comprehensive roofing solutions that protect your home and family. Our experienced team combines old-school craftsmanship with modern techniques and materials to deliver results that last.</p>
-                    
-                    <p>From emergency storm damage repairs to complete roof installations, we handle every project with the same attention to detail and commitment to excellence. We're not just contractors – we're your neighbors, invested in keeping our community's homes safe and secure.</p>
-                </div>
-                <a href="tel:+18476513214" class="btn">Get Your Free Consultation Today</a>
+            <h2>Your Local Home Services Experts in Buffalo Grove</h2>
+            <div class="about-content">
+                <p>For over a decade, Colins Roofing LLC has been the go-to roofing contractor for Buffalo Grove homeowners who demand excellence. Our family-owned business combines old-school craftsmanship with modern materials and techniques to deliver roofing solutions that last.</p>
+                <p>We understand that your roof is your home's first line of defense against the elements. That's why we use only premium materials, employ skilled technicians, and back every job with our satisfaction guarantee. From storm damage repairs to complete roof replacements, we handle every project with the same attention to detail and commitment to quality.</p>
+                <a href="tel:+18476513214" class="btn">Get Your Free Inspection</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section section-gray">
+    <!-- SERVICES SECTION -->
+    <section class="section section-alt" id="services">
         <div class="container">
-            <h2 class="text-center mb-30">Our Home Services</h2>
+            <h2>Our Home Services</h2>
             <div class="services-grid">
                 <div class="service-card">
+                    <img src="https://placehold.co/300x200/e74c3c/ffffff?text=Repair" alt="General Repair Services" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
                     <h3>General Repair</h3>
-                    <p>From missing shingles to flashing issues, we fix roofing problems quickly and effectively. Our repair work comes with a solid warranty for your peace of mind.</p>
+                    <p>From missing shingles to leak repairs, we fix roofing problems quickly and effectively using quality materials that match your existing roof.</p>
                     <a href="tel:+18476513214" class="btn">Schedule Repair</a>
                 </div>
                 <div class="service-card">
+                    <img src="https://placehold.co/300x200/1a1a2e/ffffff?text=Installation" alt="Roof Installation Services" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
                     <h3>Installation</h3>
-                    <p>Complete roof replacement and new installations using premium materials. We work with all roofing types and help you choose the best option for your home and budget.</p>
+                    <p>Complete roof installations using premium materials and proven techniques. We handle everything from permits to cleanup for a hassle-free experience.</p>
                     <a href="tel:+18476513214" class="btn">Get Quote</a>
                 </div>
                 <div class="service-card">
+                    <img src="https://placehold.co/300x200/fdecea/1a1a2e?text=Maintenance" alt="Roof Maintenance Services" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
                     <h3>Maintenance</h3>
-                    <p>Preventive maintenance programs to extend your roof's lifespan. Regular inspections and minor repairs save you thousands in major repair costs down the road.</p>
-                    <a href="tel:+18476513214" class="btn">Learn More</a>
+                    <p>Regular maintenance extends your roof's lifespan and prevents costly repairs. Our comprehensive service includes cleaning, inspection, and minor repairs.</p>
+                    <a href="tel:+18476513214" class="btn">Book Service</a>
                 </div>
                 <div class="service-card">
+                    <img src="https://placehold.co/300x200/c0392b/ffffff?text=Inspection" alt="Roof Inspection Services" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
                     <h3>Inspection</h3>
-                    <p>Thorough roof inspections with detailed reports. Whether for insurance claims, real estate transactions, or routine checkups, we provide accurate assessments.</p>
-                    <a href="tel:+18476513214" class="btn">Book Inspection</a>
+                    <p>Thorough roof inspections with detailed reports. Perfect for home purchases, insurance claims, or peace of mind after severe weather events.</p>
+                    <a href="tel:+18476513214" class="btn">Schedule Now</a>
                 </div>
                 <div class="service-card">
+                    <img src="https://placehold.co/300x200/e74c3c/ffffff?text=Emergency" alt="Emergency Roofing Services" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
                     <h3>Emergency Service</h3>
-                    <p>24/7 emergency roofing services when storms strike. We respond quickly to prevent further damage and provide temporary solutions until permanent repairs can be made.</p>
-                    <a href="tel:+18476513214" class="btn">Emergency Call</a>
+                    <p>Storm damage doesn't wait for business hours. Our emergency response team provides rapid repairs to protect your home from further damage.</p>
+                    <a href="tel:+18476513214" class="btn">Call Emergency Line</a>
                 </div>
                 <div class="service-card">
+                    <img src="https://placehold.co/300x200/1a1a2e/ffffff?text=Consultation" alt="Roofing Consultation Services" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
                     <h3>Consultation</h3>
-                    <p>Expert roofing consultation for all your questions. We help you understand your options, explain the process, and provide honest recommendations for your specific situation.</p>
-                    <a href="tel:+18476513214" class="btn">Free Consultation</a>
+                    <p>Expert advice on roofing materials, design options, and maintenance strategies. We help you make informed decisions about your roofing investment.</p>
+                    <a href="tel:+18476513214" class="btn">Get Advice</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="section">
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why-choose-us">
         <div class="container">
-            <h2 class="text-center mb-30">Why Buffalo Grove Homeowners Choose Colin's Roofing</h2>
+            <h2>Why Buffalo Grove Trusts Colins Roofing LLC</h2>
             <div class="features-grid">
-                <div class="feature-block">
-                    <div class="icon">🎯</div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔧</div>
                     <h3>Proven Experience</h3>
-                    <p>Over 10 years serving Buffalo Grove with hundreds of successful roofing projects. Our track record speaks for itself, and our satisfied customers are our best advertisement.</p>
+                    <p>Over 10 years of roofing expertise in Buffalo Grove and surrounding areas. We've seen it all and know how to handle any roofing challenge with skill and efficiency.</p>
                 </div>
-                <div class="feature-block">
-                    <div class="icon">🏆</div>
-                    <h3>Superior Quality</h3>
-                    <p>We use only premium materials from trusted manufacturers and employ skilled craftsmen who take pride in their work. Every job is completed to the highest industry standards.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Unmatched Quality</h3>
+                    <p>We use only top-grade materials from trusted manufacturers and employ meticulous installation techniques. Every job is completed to exceed industry standards and your expectations.</p>
                 </div>
-                <div class="feature-block">
-                    <div class="icon">📍</div>
+                <div class="feature-item">
+                    <div class="feature-icon">📍</div>
                     <h3>Local Knowledge</h3>
-                    <p>We understand Buffalo Grove's unique weather challenges and building requirements. Our local expertise ensures your roof is built to withstand our specific climate conditions.</p>
+                    <p>As Buffalo Grove locals, we understand the unique weather challenges and building requirements in our area. This knowledge helps us recommend the best solutions for your specific needs.</p>
                 </div>
-                <div class="feature-block">
-                    <div class="icon">✅</div>
-                    <h3>Satisfaction Guarantee</h3>
-                    <p>Your complete satisfaction is our commitment. We stand behind our work with comprehensive warranties and won't consider the job complete until you're 100% happy with the results.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>100% Satisfaction Guarantee</h3>
+                    <p>Your complete satisfaction is our top priority. We stand behind every job with comprehensive warranties and won't consider the work finished until you're completely happy with the results.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service Areas -->
-    <section class="section section-gray">
-        <div class="container text-center">
-            <h2 class="mb-30">Proudly Serving Buffalo Grove and Surrounding Areas</h2>
-            <p>Colin's Roofing LLC is your local roofing specialist, deeply rooted in the Buffalo Grove community. We're committed to providing exceptional service to homeowners throughout our service area, bringing the same level of quality and care to every neighborhood we serve.</p>
-            <div class="area-tags">
-                <a href="tel:+18476513214" class="area-tag">Buffalo Grove</a>
-                <a href="tel:+18476513214" class="area-tag">Arlington Heights</a>
-                <a href="tel:+18476513214" class="area-tag">Wheeling</a>
-                <a href="tel:+18476513214" class="area-tag">Prospect Heights</a>
-                <a href="tel:+18476513214" class="area-tag">Lake Zurich</a>
-                <a href="tel:+18476513214" class="area-tag">Vernon Hills</a>
-                <a href="tel:+18476513214" class="area-tag">Lincolnshire</a>
-                <a href="tel:+18476513214" class="area-tag">Deerfield</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section">
+    <!-- SERVICE AREAS -->
+    <section class="section section-alt" id="service-areas">
         <div class="container">
-            <h2 class="text-center mb-30">How We Make Roofing Simple</h2>
-            <div class="steps-grid">
+            <h2>Serving Buffalo Grove & Surrounding Areas</h2>
+            <div class="areas-pills">
+                <a href="tel:+18476513214" class="area-pill">Buffalo Grove</a>
+                <a href="tel:+18476513214" class="area-pill">Arlington Heights</a>
+                <a href="tel:+18476513214" class="area-pill">Wheeling</a>
+                <a href="tel:+18476513214" class="area-pill">Vernon Hills</a>
+                <a href="tel:+18476513214" class="area-pill">Lincolnshire</a>
+                <a href="tel:+18476513214" class="area-pill">Highland Park</a>
+                <a href="tel:+18476513214" class="area-pill">Lake Forest</a>
+                <a href="tel:+18476513214" class="area-pill">Deerfield</a>
+            </div>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto;">Proudly serving Buffalo Grove and the surrounding communities with reliable, professional roofing services. Our local presence means faster response times and better service for all your roofing needs.</p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2>How We Make Roofing Simple</h2>
+            <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Call for Assessment</h3>
-                    <p>Contact us for a free consultation. We'll schedule a convenient time to assess your roofing needs and discuss your options without any pressure or obligation.</p>
+                    <h3>Call for Consultation</h3>
+                    <p>Contact us to discuss your roofing needs. We'll schedule a convenient time for assessment and answer any questions about our services, materials, or pricing.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Free Detailed Estimate</h3>
-                    <p>We provide a thorough inspection and detailed written estimate. You'll understand exactly what needs to be done, what materials we'll use, and what everything costs upfront.</p>
+                    <h3>Free Professional Estimate</h3>
+                    <p>Our experienced team conducts a thorough inspection and provides a detailed, written estimate with no hidden costs. We explain our recommendations clearly and honestly.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Expert Service Delivery</h3>
-                    <p>Once you approve, we schedule your project and complete the work efficiently with minimal disruption to your daily routine. We clean up completely when finished.</p>
+                    <p>Once approved, our skilled craftsmen complete your project efficiently and safely. We handle permits, cleanup, and final inspection to ensure your complete satisfaction.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section section-gray">
+    <section class="section section-alt" id="faq">
         <div class="container">
-            <h2 class="text-center mb-30">Frequently Asked Questions</h2>
-            <div class="faq">
-                <details>
-                    <summary>How much does roof repair or replacement cost?</summary>
-                    <div class="faq-content">
-                        <p>Roofing costs vary significantly based on the size of your roof, materials chosen, extent of damage, and complexity of the job. Minor repairs might cost a few hundred dollars, while complete replacements typically range from several thousand to tens of thousands. We provide detailed, written estimates that break down all costs so you can make an informed decision. Every estimate is free with no obligation.</p>
-                    </div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>How much does a typical roofing project cost?</summary>
+                    <p>Roofing costs vary based on size, materials, and complexity. Most repairs range from $300-$1,500, while full replacements typically cost $8,000-$15,000. We provide detailed written estimates for every project at no charge.</p>
                 </details>
-
-                <details>
-                    <summary>How long does a typical roofing project take?</summary>
-                    <div class="faq-content">
-                        <p>Most residential roof repairs can be completed in a day or two, while full roof replacements typically take 2-5 days depending on size and complexity. Weather conditions, material availability, and permit requirements can affect timing. We'll provide a realistic timeline during your consultation and keep you informed of any changes throughout the project.</p>
-                    </div>
+                <details class="faq-item">
+                    <summary>How long does roof installation or repair take?</summary>
+                    <p>Most roof repairs can be completed in 1-2 days, while complete installations typically take 2-5 days depending on size and weather conditions. We'll provide a realistic timeline during your estimate and keep you updated throughout the process.</p>
                 </details>
-
-                <details>
+                <details class="faq-item">
                     <summary>Are you licensed and insured?</summary>
-                    <div class="faq-content">
-                        <p>Yes, Colin's Roofing LLC is fully licensed and carries comprehensive liability insurance and workers' compensation coverage. We're happy to provide copies of our credentials and insurance certificates. This protects both you and our workers, giving you peace of mind that you're working with a legitimate, professional contractor.</p>
-                    </div>
+                    <p>Yes, Colins Roofing LLC is fully licensed and carries comprehensive liability insurance and workers' compensation coverage. We're happy to provide proof of insurance and licensing upon request for your peace of mind.</p>
                 </details>
-
-                <details>
-                    <summary>What kind of warranty do you offer?</summary>
-                    <div class="faq-content">
-                        <p>We stand behind our work with solid warranties that vary by service type. Our workmanship warranties typically range from 1-10 years, and we also pass through manufacturer warranties on materials. We'll explain exactly what's covered before starting any work. If issues arise within the warranty period, we'll return to make things right at no cost to you.</p>
-                    </div>
+                <details class="faq-item">
+                    <summary>What warranty do you offer on your work?</summary>
+                    <p>We stand behind our work with a comprehensive warranty that covers both materials and workmanship. Warranty terms vary by project type and materials used - we'll explain all warranty details in your written estimate.</p>
                 </details>
-
-                <details>
-                    <summary>Do you provide emergency roofing services?</summary>
-                    <div class="faq-content">
-                        <p>Absolutely. We understand that roofing emergencies don't wait for business hours. We provide 24/7 emergency services for storm damage, leaks, and other urgent roofing issues. Our emergency team responds quickly to minimize damage to your home and belongings. We'll provide temporary solutions immediately and develop a permanent repair plan once conditions allow.</p>
-                    </div>
+                <details class="faq-item">
+                    <summary>Do you handle emergency roofing situations?</summary>
+                    <p>Absolutely. We understand that roofing emergencies can't wait. Our emergency response team is available for urgent situations like storm damage, severe leaks, or structural issues that need immediate attention to prevent further damage.</p>
                 </details>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
+    <!-- FINAL CTA -->
     <section class="final-cta">
         <div class="container">
             <h2>Ready to Protect Your Home?</h2>
-            <p>Don't wait until a small problem becomes a big expense. Contact Buffalo Grove's most trusted roofing contractor today.</p>
-            <div class="final-buttons">
-                <a href="tel:+18476513214" class="btn">📞 Call Now</a>
+            <p>Don't wait for small roofing problems to become major headaches. Contact Buffalo Grove's trusted roofing experts today for your free estimate.</p>
+            <div class="cta-buttons">
+                <a href="tel:+18476513214" class="btn">📞 Call (847) 651-3214</a>
                 <a href="tel:+18476513214" class="btn">🆓 Free Estimate</a>
                 <a href="tel:+18476513214" class="btn">⚡ Emergency Service</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Colin's Roofing LLC</h3>
+                <div>
+                    <h3>Colins Roofing LLC</h3>
                     <p>Buffalo Grove, ST</p>
                     <p><a href="tel:+18476513214">(847) 651-3214</a></p>
-                    <p>Your trusted local roofing experts</p>
+                    <p>Licensed & Insured Roofing Contractor</p>
                 </div>
-                <div class="footer-section">
+                <div>
                     <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="tel:+18476513214">General Repair</a></li>
-                        <li><a href="tel:+18476513214">Installation</a></li>
-                        <li><a href="tel:+18476513214">Maintenance</a></li>
-                        <li><a href="tel:+18476513214">Inspection</a></li>
-                        <li><a href="tel:+18476513214">Emergency Service</a></li>
-                        <li><a href="tel:+18476513214">Consultation</a></li>
-                    </ul>
+                    <p><a href="tel:+18476513214">General Repair</a></p>
+                    <p><a href="tel:+18476513214">Installation</a></p>
+                    <p><a href="tel:+18476513214">Maintenance</a></p>
+                    <p><a href="tel:+18476513214">Inspection</a></p>
+                    <p><a href="tel:+18476513214">Emergency Service</a></p>
+                    <p><a href="tel:+18476513214">Consultation</a></p>
                 </div>
-                <div class="footer-section">
+                <div>
                     <h3>Service Areas</h3>
-                    <ul>
-                        <li>Buffalo Grove</li>
-                        <li>Arlington Heights</li>
-                        <li>Wheeling</li>
-                        <li>Prospect Heights</li>
-                        <li>Lake Zurich</li>
-                        <li>Vernon Hills</li>
-                        <li>And surrounding areas</li>
-                    </ul>
+                    <p><a href="tel:+18476513214">Buffalo Grove</a></p>
+                    <p><a href="tel:+18476513214">Arlington Heights</a></p>
+                    <p><a href="tel:+18476513214">Wheeling</a></p>
+                    <p><a href="tel:+18476513214">Vernon Hills</a></p>
+                    <p><a href="tel:+18476513214">Lincolnshire</a></p>
+                    <p><a href="tel:+18476513214">& Surrounding Areas</a></p>
                 </div>
             </div>
-            <div style="text-align: center; padding-top: 20px; border-top: 1px solid #ddd;">
-                <p>&copy; 2024 Colin's Roofing LLC. All rights reserved. | Licensed & Insured Roofing Contractor</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Colins Roofing LLC. All rights reserved. | Professional roofing services in Buffalo Grove, ST and surrounding areas.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Sticky Bottom Bar -->
+    <!-- STICKY BOTTOM BAR -->
     <div class="sticky-bar">
-        <div class="sticky-buttons">
-            <a href="tel:+18476513214" class="btn">📞 Call Now</a>
-            <a href="tel:+18476513214" class="btn">Free Quote</a>
-        </div>
+        <a href="tel:+18476513214" class="btn">📞 Call Now</a>
+        <a href="tel:+18476513214" class="btn">Free Quote</a>
     </div>
 </body>
 </html>
