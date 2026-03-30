@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Roofing Solutions - Expert Roofing Services in Tuscaloosa, AL</title>
+    <meta name="description" content="Trusted roofing contractor in Tuscaloosa, AL. Expert roof repair, replacement, storm damage restoration. Licensed & insured. Free estimates. Call (205) 555-1234.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Apex Roofing Solutions",
+        "image": "https://placehold.co/400x300/2d3436/ffffff",
+        "@id": "",
+        "url": "",
+        "telephone": "(205) 555-1234",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "Tuscaloosa",
+            "addressRegion": "AL",
+            "postalCode": "",
+            "addressCountry": "US"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "sameAs": [],
+        "description": "Professional roofing contractor serving Tuscaloosa and surrounding areas. Specializing in roof repair, replacement, storm damage restoration, gutter installation, and roof inspections."
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #2d3436;
+            padding-bottom: 70px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #2d3436;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: #e74c3c;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .trust-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        .trust-item .icon {
+            font-size: 1.2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background: #f8f9fa;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2d3436;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #e74c3c;
+        }
+
+        .service-card p {
+            margin-bottom: 1.5rem;
+            color: #636e72;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: #fdecea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: #e74c3c;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Service Areas */
+        .areas-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .area-tag {
+            background: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .area-tag:hover {
+            background: #c0392b;
+        }
+
+        /* How It Works */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .step-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+
+        .step-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            background: #f8f9fa;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1.1rem;
+            list-style: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary:before {
+            content: '+';
+            float: right;
+            font-size: 1.2rem;
+            color: #e74c3c;
+        }
+
+        .faq-item[open] summary:before {
+            content: '−';
+        }
+
+        .faq-content {
+            padding: 20px;
+            background: white;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d3436;
+            color: white;
+            padding: 50px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: #e74c3c;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #636e72;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+            color: #ddd;
+        }
+
+        /* Sticky Bottom Bar */
+        .sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2d3436;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+            z-index: 9999;
+        }
+
+        .sticky-bar .btn {
+            flex: 1;
+            max-width: 200px;
+            padding: 12px 20px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .trust-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .trust-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .trust-item {
+                font-size: 14px;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .sticky-bar {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .sticky-bar .btn {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Apex Roofing Solutions</h1>
+            <p class="subtitle">Tuscaloosa's Most Trusted Roofing Contractor - Protecting Your Home Since Day One</p>
+            <div class="hero-buttons">
+                <a href="tel:(205) 555-1234" class="btn">📞 Call Now</a>
+                <a href="tel:(205) 555-1234" class="btn btn-outline">Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span class="icon">🛡️</span>
+                    <span>Licensed & Insured</span>
+                </div>
+                <div class="trust-item">
+                    <span class="icon">💯</span>
+                    <span>Free Estimates</span>
+                </div>
+                <div class="trust-item">
+                    <span class="icon">⭐</span>
+                    <span>5-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <span class="icon">🏠</span>
+                    <span>Locally Owned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>Your Local Roofing Experts in Tuscaloosa</h2>
+            <div class="about-content">
+                <p>For years, Apex Roofing Solutions has been the trusted choice for homeowners throughout Tuscaloosa and surrounding communities. Our experienced team specializes in comprehensive roofing services, from minor repairs to complete roof replacements. We understand Alabama's unique weather challenges and use only premium materials designed to withstand our climate.</p>
+                
+                <p>As a locally owned and operated company, we take pride in building lasting relationships with our neighbors. Every project receives our full attention, whether it's emergency storm damage repair or a planned roof upgrade. Our commitment to quality craftsmanship and honest pricing has earned us a reputation as the area's most reliable roofing contractor.</p>
+                
+                <a href="tel:(205) 555-1234" class="btn">Get Your Free Quote Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-alt" id="services">
+        <div class="container">
+            <h2>Our Roofing Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Roof Repair</h3>
+                    <p>Fast, reliable repairs for leaks, damaged shingles, and storm damage. We fix problems before they become major headaches.</p>
+                    <a href="tel:(205) 555-1234" class="btn">Schedule Repair</a>
+                </div>
+                <div class="service-card">
+                    <h3>Roof Replacement</h3>
+                    <p>Complete roof replacement using premium materials and expert installation. Increase your home's value and protection.</p>
+                    <a href="tel:(205) 555-1234" class="btn">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <h3>Storm Damage</h3>
+                    <p>24/7 emergency response for storm damage. We work directly with insurance companies to streamline your claim.</p>
+                    <a href="tel:(205) 555-1234" class="btn">Emergency Service</a>
+                </div>
+                <div class="service-card">
+                    <h3>Gutter Installation</h3>
+                    <p>Professional gutter installation and repair to protect your foundation and prevent water damage.</p>
+                    <a href="tel:(205) 555-1234" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <h3>Roof Inspection</h3>
+                    <p>Thorough roof inspections to identify potential issues before they become costly problems. Detailed reports included.</p>
+                    <a href="tel:(205) 555-1234" class="btn">Book Inspection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" id="why-choose">
+        <div class="container">
+            <h2>Why Choose Apex Roofing Solutions</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Proven Experience</h3>
+                    <p>Our skilled craftsmen bring years of roofing experience to every project. We've seen it all and know how to handle any roofing challenge with precision and care.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3>Superior Quality</h3>
+                    <p>We use only the finest materials from trusted manufacturers. Our attention to detail and commitment to excellence ensures your roof will stand the test of time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <h3>Local Knowledge</h3>
+                    <p>As Tuscaloosa natives, we understand local building codes, weather patterns, and architectural styles. This knowledge helps us provide solutions that work perfectly for our area.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>100% Satisfaction</h3>
+                    <p>Your complete satisfaction is our guarantee. We stand behind every job with comprehensive warranties and responsive customer service long after completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="section section-alt" id="service-areas">
+        <div class="container">
+            <h2>Serving Tuscaloosa & Surrounding Areas</h2>
+            <div class="areas-content">
+                <p>Apex Roofing Solutions proudly serves homeowners throughout Tuscaloosa County and the surrounding communities. Our local presence means faster response times and personalized service you can count on.</p>
+                
+                <div class="areas-list">
+                    <a href="tel:(205) 555-1234" class="area-tag">Tuscaloosa</a>
+                    <a href="tel:(205) 555-1234" class="area-tag">Northport</a>
+                    <a href="tel:(205) 555-1234" class="area-tag">Cottondale</a>
+                    <a href="tel:(205) 555-1234" class="area-tag">Brookwood</a>
+                    <a href="tel:(205) 555-1234" class="area-tag">Holt</a>
+                    <a href="tel:(205) 555-1234" class="area-tag">Coker</a>
+                </div>
+                
+                <p>Don't see your area listed? Give us a call - we may still be able to help with your roofing needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="process">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Call Us Today</h3>
+                    <p>Contact our friendly team to discuss your roofing needs. We'll schedule a convenient time for your free, no-obligation consultation and estimate.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Free Expert Estimate</h3>
+                    <p>Our experienced roofer will thoroughly inspect your roof and provide a detailed, written estimate. We'll explain all options and answer your questions.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Professional Service</h3>
+                    <p>Once you approve the estimate, our skilled team gets to work. We complete projects on time, within budget, and clean up thoroughly when finished.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>How much does a new roof cost?</summary>
+                    <div class="faq-content">
+                        <p>Roof replacement costs vary based on size, materials, and complexity. Most residential projects in Tuscaloosa range from $8,000 to $25,000. We provide free, detailed estimates so you know exactly what to expect with no hidden fees.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>How long does roof installation take?</summary>
+                    <div class="faq-content">
+                        <p>Most residential roof replacements take 1-3 days, depending on size and weather conditions. Repairs are often completed the same day. We'll give you a realistic timeline during your estimate and keep you updated throughout the project.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Are you licensed and insured?</summary>
+                    <div class="faq-content">
+                        <p>Absolutely. Apex Roofing Solutions is fully licensed, bonded, and insured for your protection. We carry comprehensive liability insurance and workers' compensation coverage. We're happy to provide proof of insurance upon request.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Do you offer warranties on your work?</summary>
+                    <div class="faq-content">
+                        <p>Yes, we stand behind our work with comprehensive warranties. Our workmanship is guaranteed, and we also provide manufacturer warranties on materials. Specific warranty terms depend on the scope of work and materials used.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Do you provide emergency roofing services?</summary>
+                    <div class="faq-content">
+                        <p>Yes, we offer 24/7 emergency services for storm damage, severe leaks, and other urgent roofing issues. We understand that roof problems can't wait, so we prioritize emergency calls to prevent further damage to your home.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready for a Better Roof?</h2>
+            <p>Don't wait for small problems to become big headaches. Contact Apex Roofing Solutions today for your free estimate and experience the difference quality makes.</p>
+            <div class="cta-buttons">
+                <a href="tel:(205) 555-1234" class="btn">📞 Call (205) 555-1234</a>
+                <a href="tel:(205) 555-1234" class="btn">Get Free Estimate</a>
+                <a href="tel:(205) 555-1234" class="btn">Emergency Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Apex Roofing Solutions</h3>
+                    <p>Tuscaloosa, AL</p>
+                    <p><a href="tel:(205) 555-1234">(205) 555-1234</a></p>
+                    <p>Your trusted local roofing contractor serving Tuscaloosa and surrounding areas with quality craftsmanship and reliable service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="tel:(205) 555-1234">Roof Repair</a></li>
+                        <li><a href="tel:(205) 555-1234">Roof Replacement</a></li>
+                        <li><a href="tel:(205) 555-1234">Storm Damage</a></li>
+                        <li><a href="tel:(205) 555-1234">Gutter Installation</a></li>
+                        <li><a href="tel:(205) 555-1234">Roof Inspection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li><a href="tel:(205) 555-1234">Tuscaloosa, AL</a></li>
+                        <li><a href="tel:(205) 555-1234">Northport, AL</a></li>
+                        <li><a href="tel:(205) 555-1234">Cottondale, AL</a></li>
+                        <li><a href="tel:(205) 555-1234">Brookwood, AL</a></li>
+                        <li><a href="tel:(205) 555-1234">Holt, AL</a></li>
+                        <li><a href="tel:(205) 555-1234">Coker, AL</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Roofing Solutions. All rights reserved. Licensed, Bonded & Insured Roofing Contractor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom Bar -->
+    <div class="sticky-bar">
+        <a href="tel:(205) 555-1234" class="btn">📞 Call Now</a>
+        <a href="tel:(205) 555-1234" class="btn">Free Quote</a>
+    </div>
+</body>
+</html>
