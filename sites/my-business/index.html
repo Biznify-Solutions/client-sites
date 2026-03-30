@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business - Professional Home Services in Your City, ST | Licensed & Insured</title>
+    <meta name="description" content="My Business provides expert home repair, installation, maintenance & emergency services in Your City, ST. Licensed, insured & locally owned. Call (847) 505-3640 for free estimates!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "My Business",
+        "image": "https://placehold.co/600x400/1a1a2e/ffffff",
+        "@id": "",
+        "url": "",
+        "telephone": "+18475053640",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "Your City",
+            "addressRegion": "ST",
+            "postalCode": "",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 0,
+            "longitude": 0
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "07:00",
+            "closes": "19:00"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-bottom: 70px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #e74c3c;
+            color: #e74c3c;
+        }
+
+        .btn-secondary:hover {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-large {
+            padding: 18px 36px;
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background: #f8f9fa;
+        }
+
+        .section-dark {
+            background: #1a1a2e;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: #e74c3c;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .trust-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .trust-item .icon {
+            font-size: 1.5rem;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+
+        .service-card p {
+            margin-bottom: 25px;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-item .icon {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+
+        /* Service Areas */
+        .area-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .area-tag {
+            background: #fdecea;
+            color: #e74c3c;
+            padding: 8px 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            border: 1px solid #e74c3c;
+            transition: all 0.3s ease;
+        }
+
+        .area-tag:hover {
+            background: #e74c3c;
+            color: white;
+        }
+
+        /* How It Works */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .step-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            line-height: 60px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .step-item h3 {
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            padding: 20px;
+            background: #f8f9fa;
+            cursor: pointer;
+            font-weight: 600;
+            list-style: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item[open] summary {
+            background: #fdecea;
+            color: #1a1a2e;
+        }
+
+        .faq-content {
+            padding: 20px;
+            background: white;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .final-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 50px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-section a:hover {
+            color: #e74c3c;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #ccc;
+        }
+
+        /* Sticky Bottom Bar */
+        .sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1a1a2e;
+            padding: 15px 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            z-index: 9999;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .sticky-bar .btn {
+            flex: 1;
+            max-width: 200px;
+            text-align: center;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-dark .section-header h2,
+        .section-dark .section-header p {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .trust-items {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            
+            .trust-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .trust-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .sticky-bar {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .sticky-bar .btn {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>My Business</h1>
+            <p class="subtitle">Professional Home Services You Can Trust in Your City, ST</p>
+            <div class="hero-cta">
+                <a href="tel:+18475053640" class="btn btn-large">Call Now: (847) 505-3640</a>
+                <a href="tel:+18475053640" class="btn btn-large btn-secondary">Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span class="icon">🛡️</span>
+                    <span>Licensed & Insured</span>
+                </div>
+                <div class="trust-item">
+                    <span class="icon">📋</span>
+                    <span>Free Estimates</span>
+                </div>
+                <div class="trust-item">
+                    <span class="icon">⭐</span>
+                    <span>5-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <span class="icon">🏠</span>
+                    <span>Locally Owned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Your Local Home Services Experts in Your City</h2>
+                    <p>For over a decade, My Business has been Your City's trusted partner for comprehensive home services. Our skilled technicians bring years of experience to every job, from routine maintenance to complex repairs and emergency situations.</p>
+                    <p>We understand that your home is your biggest investment. That's why we use only quality materials, proven techniques, and stand behind our work with solid warranties. Our local team knows the unique challenges homes face in the Your City area and provides solutions that last.</p>
+                    <p>When you choose My Business, you're choosing reliability, craftsmanship, and honest service from neighbors who care about your community.</p>
+                    <a href="tel:+18475053640" class="btn">Get Your Free Quote</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/500x400/1a1a2e/ffffff?text=Professional+Team" alt="My Business professional team" style="width: 100%; border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Home Services</h2>
+                <p>Complete solutions for all your home service needs, backed by professional expertise and quality workmanship</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>General Repair</h3>
+                    <p>From minor fixes to major repairs, we handle all types of home maintenance issues with precision and care.</p>
+                    <a href="tel:+18475053640" class="btn">Schedule Repair</a>
+                </div>
+                <div class="service-card">
+                    <h3>Installation</h3>
+                    <p>Professional installation services for fixtures, appliances, and systems throughout your home.</p>
+                    <a href="tel:+18475053640" class="btn">Get Installation Quote</a>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance</h3>
+                    <p>Regular maintenance programs to keep your home systems running efficiently and prevent costly breakdowns.</p>
+                    <a href="tel:+18475053640" class="btn">Schedule Maintenance</a>
+                </div>
+                <div class="service-card">
+                    <h3>Inspection</h3>
+                    <p>Thorough inspections to identify potential issues before they become expensive problems.</p>
+                    <a href="tel:+18475053640" class="btn">Book Inspection</a>
+                </div>
+                <div class="service-card">
+                    <h3>Emergency Service</h3>
+                    <p>24/7 emergency response for urgent home service issues that can't wait until tomorrow.</p>
+                    <a href="tel:+18475053640" class="btn">Emergency Call</a>
+                </div>
+                <div class="service-card">
+                    <h3>Consultation</h3>
+                    <p>Expert advice and planning for home improvement projects, upgrades, and system replacements.</p>
+                    <a href="tel:+18475053640" class="btn">Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose My Business?</h2>
+                <p>The qualities that set us apart in the Your City home services market</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon">🔧</div>
+                    <h3>Years of Experience</h3>
+                    <p>Our seasoned professionals have handled thousands of home service calls throughout Your City. We've seen it all and know how to solve problems efficiently, saving you time and money with proven solutions.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">💎</div>
+                    <h3>Quality Workmanship</h3>
+                    <p>We take pride in every job, using premium materials and time-tested techniques. Our attention to detail ensures repairs and installations that stand the test of time, backed by comprehensive warranties.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">📍</div>
+                    <h3>Local Knowledge</h3>
+                    <p>As Your City locals, we understand the unique challenges homes face in our area. From weather patterns to local building codes, our regional expertise ensures appropriate solutions for our community.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>Your complete satisfaction drives everything we do. We're not finished until you're completely happy with our work. That's our promise to every customer, every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas We Serve</h2>
+                <p>Proud to provide professional home services throughout Your City and surrounding communities</p>
+            </div>
+            <p style="text-align: center; margin-bottom: 30px;">Our mobile service fleet covers a wide area around Your City, ST. We're committed to bringing reliable home services directly to your neighborhood, typically arriving within the same day for most service calls.</p>
+            <div class="area-tags">
+                <a href="tel:+18475053640" class="area-tag">Your City</a>
+                <a href="tel:+18475053640" class="area-tag">Downtown Your City</a>
+                <a href="tel:+18475053640" class="area-tag">West Your City</a>
+                <a href="tel:+18475053640" class="area-tag">East Your City</a>
+                <a href="tel:+18475053640" class="area-tag">North Your City</a>
+                <a href="tel:+18475053640" class="area-tag">South Your City</a>
+                <a href="tel:+18475053640" class="area-tag">Your City Heights</a>
+                <a href="tel:+18475053640" class="area-tag">Your City Gardens</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Getting professional home services has never been easier</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Call Us</h3>
+                    <p>Contact our friendly team at (847) 505-3640 to discuss your home service needs. We'll ask a few quick questions to understand your situation and schedule a convenient time.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Free Estimate</h3>
+                    <p>Our experienced technician visits your property to assess the work needed. We provide a detailed, transparent estimate with no hidden fees or surprise charges.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Expert Service</h3>
+                    <p>Once approved, our skilled professionals complete your project using quality materials and proven techniques. We clean up after ourselves and ensure your complete satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our home services</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>How much do your home services typically cost?</summary>
+                    <div class="faq-content">
+                        <p>Service costs vary depending on the specific work needed, materials required, and project complexity. We always provide free, detailed estimates before starting any work. Most routine maintenance and minor repairs range from $150-$500, while larger projects are quoted individually. We're committed to transparent, fair pricing with no hidden fees.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How quickly can you respond to service calls?</summary>
+                    <div class="faq-content">
+                        <p>For regular service calls, we typically schedule within 24-48 hours of your initial contact. Emergency services are available 24/7, with response times usually within 2-4 hours depending on location and weather conditions. We understand that some home issues can't wait, and we prioritize urgent situations accordingly.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Are you licensed and insured?</summary>
+                    <div class="faq-content">
+                        <p>Yes, My Business is fully licensed for home services in ST and carries comprehensive liability insurance and workers' compensation coverage. We can provide proof of insurance upon request and ensure all work meets local building codes and industry standards. Your property and our team are fully protected.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you offer warranties on your work?</summary>
+                    <div class="faq-content">
+                        <p>Absolutely. We stand behind our workmanship with warranties that vary by service type. Most repairs come with a 90-day guarantee, installations typically include a 1-year warranty, and we honor all manufacturer warranties on parts and materials. If issues arise due to our workmanship, we'll return to make it right at no charge.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you provide emergency services?</summary>
+                    <div class="faq-content">
+                        <p>Yes, we offer 24/7 emergency home services for urgent situations that pose safety risks or could cause property damage. Emergency calls include after-hours response with premium rates. Common emergency situations include major leaks, electrical hazards, security issues, and heating/cooling failures during extreme weather.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="final-cta">
+                <h2>Ready to Get Started?</h2>
+                <p>Don't wait for small problems to become big headaches. Contact My Business today for professional home services you can trust.</p>
+                <div class="final-cta-buttons">
+                    <a href="tel:+18475053640" class="btn btn-large">Call (847) 505-3640</a>
+                    <a href="tel:+18475053640" class="btn btn-large">Free Estimate</a>
+                    <a href="tel:+18475053640" class="btn btn-large">Emergency Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>My Business</h3>
+                    <p>Your City, ST</p>
+                    <p>Phone: <a href="tel:+18475053640">(847) 505-3640</a></p>
+                    <p>Professional home services throughout Your City and surrounding areas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <a href="tel:+18475053640">General Repair</a>
+                    <a href="tel:+18475053640">Installation</a>
+                    <a href="tel:+18475053640">Maintenance</a>
+                    <a href="tel:+18475053640">Inspection</a>
+                    <a href="tel:+18475053640">Emergency Service</a>
+                    <a href="tel:+18475053640">Consultation</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <a href="tel:+18475053640">Your City</a>
+                    <a href="tel:+18475053640">Downtown Your City</a>
+                    <a href="tel:+18475053640">West Your City</a>
+                    <a href="tel:+18475053640">East Your City</a>
+                    <a href="tel:+18475053640">Your City Heights</a>
+                    <a href="tel:+18475053640">Your City Gardens</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Business. All rights reserved. | Licensed & Insured Home Services in Your City, ST</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom Bar -->
+    <div class="sticky-bar">
+        <a href="tel:+18475053640" class="btn">📞 Call Now</a>
+        <a href="tel:+18475053640" class="btn btn-secondary">📋 Free Quote</a>
+    </div>
+</body>
+</html>
