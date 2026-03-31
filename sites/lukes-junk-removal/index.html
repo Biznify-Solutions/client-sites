@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke's Junk Removal - Professional Home Services in Your City, ST | Free Estimates</title>
-    <meta name="description" content="Luke's Junk Removal provides expert home services including repair, installation, maintenance, and emergency service in Your City, ST. Licensed, insured, and locally owned. Call (847) 505-3640 for your free estimate today!">
-    
+    <title>Luke's Junk Removal - Professional Junk Removal Services in Your City, ST | Free Estimates</title>
+    <meta name="description" content="Luke's Junk Removal provides reliable junk removal services in Your City, ST. Licensed, insured, and locally owned. Get your free estimate today - call (847) 505-3640">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +14,6 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Luke's Junk Removal",
-        "description": "Professional home services including repair, installation, maintenance, inspection, emergency service, and consultation",
         "telephone": "+18475053640",
         "address": {
             "@type": "PostalAddress",
@@ -23,85 +21,91 @@
             "addressRegion": "ST"
         },
         "areaServed": "Your City and surrounding areas",
-        "serviceType": ["General Repair", "Installation", "Maintenance", "Inspection", "Emergency Service", "Consultation"]
+        "serviceType": ["General Repair", "Installation", "Maintenance", "Inspection", "Emergency Service", "Consultation"],
+        "priceRange": "$$"
     }
     </script>
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: #333;
             padding-bottom: 70px;
         }
-        
-        h1, h2, h3, h4, h5, h6 {
+
+        h1, h2, h3, h4 {
             font-family: 'Outfit', sans-serif;
             font-weight: 700;
             line-height: 1.2;
-            margin-bottom: 1rem;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         .btn {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 14px 28px;
             background: #e74c3c;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-weight: 600;
+            font-size: 16px;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            font-size: 16px;
         }
-        
+
         .btn:hover {
             background: #c0392b;
             transform: translateY(-2px);
         }
-        
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #e74c3c;
+            color: #e74c3c;
+        }
+
+        .btn-outline:hover {
+            background: #e74c3c;
+            color: white;
+        }
+
         .btn-large {
-            padding: 16px 32px;
+            padding: 18px 36px;
             font-size: 18px;
         }
-        
-        .section {
-            padding: 60px 0;
-        }
-        
-        .section-alt {
-            background: #f8f9fa;
-        }
-        
+
         /* Hero Section */
         .hero {
             background: #1a1a2e;
             color: white;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
             text-align: center;
-            padding: 100px 0;
-            background-image: url('https://placehold.co/1200x600/1a1a2e/ffffff?text=Professional+Home+Services');
+            position: relative;
+            background-image: url('https://placehold.co/1200x800/1a1a2e/ffffff?text=Professional+Junk+Removal');
             background-size: cover;
             background-position: center;
-            position: relative;
+            background-blend-mode: overlay;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -111,236 +115,233 @@
             bottom: 0;
             background: rgba(26, 26, 46, 0.8);
         }
-        
+
         .hero-content {
             position: relative;
             z-index: 2;
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-transform: capitalize;
+            text-transform: lowercase;
         }
-        
-        .hero .subtitle {
-            font-size: 1.4rem;
+
+        .hero .tagline {
+            font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
-        
-        .hero-ctas {
+
+        .hero-buttons {
             display: flex;
-            gap: 20px;
+            gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         /* Trust Bar */
         .trust-bar {
             background: #e74c3c;
             color: white;
             padding: 20px 0;
         }
-        
+
         .trust-items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
             text-align: center;
         }
-        
+
         .trust-item {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             font-weight: 600;
         }
-        
-        .trust-item span {
+
+        .trust-item i {
             font-size: 1.2rem;
         }
-        
-        /* About Section */
-        .about {
-            text-align: center;
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
         }
-        
-        .about h2 {
+
+        .section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section h2 {
             font-size: 2.5rem;
-            margin-bottom: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
             color: #1a1a2e;
         }
-        
-        .about p {
-            font-size: 1.1rem;
+
+        /* About Section */
+        .about-content {
             max-width: 800px;
-            margin: 0 auto 2rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
             color: #555;
         }
-        
+
         /* Services Grid */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .service-card {
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             text-align: center;
             transition: transform 0.3s ease;
         }
-        
+
         .service-card:hover {
             transform: translateY(-5px);
         }
-        
-        .service-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
+
         .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
             color: #1a1a2e;
-            margin-bottom: 15px;
         }
-        
+
         .service-card p {
             color: #666;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
-        
+
         /* Why Choose Us */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .feature {
             text-align: center;
+            padding: 1.5rem;
         }
-        
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: #fdecea;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 2rem;
+
+        .feature i {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
         }
-        
+
         .feature h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
             color: #1a1a2e;
-            margin-bottom: 15px;
         }
-        
+
         /* Service Areas */
         .areas-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 2rem;
+            gap: 1rem;
             justify-content: center;
+            margin: 2rem 0;
         }
-        
+
         .area-tag {
             background: #fdecea;
             color: #e74c3c;
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
         }
-        
+
         .area-tag:hover {
             background: #e74c3c;
             color: white;
         }
-        
+
         /* How It Works */
         .steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .step {
             text-align: center;
-            position: relative;
+            padding: 2rem;
         }
-        
+
         .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             width: 60px;
             height: 60px;
             background: #e74c3c;
             color: white;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
             font-size: 1.5rem;
             font-weight: bold;
+            margin-bottom: 1rem;
         }
-        
+
         .step h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
             color: #1a1a2e;
-            margin-bottom: 15px;
         }
-        
+
         /* FAQ */
-        .faq {
+        .faq-list {
             max-width: 800px;
             margin: 0 auto;
         }
-        
-        .faq details {
+
+        .faq-item {
+            margin-bottom: 1rem;
             background: white;
-            margin-bottom: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        
-        .faq summary {
-            padding: 20px;
+
+        .faq-item summary {
+            padding: 1.5rem;
             font-weight: 600;
             cursor: pointer;
+            background: #fdecea;
             color: #1a1a2e;
-            border-radius: 8px;
-            transition: background 0.3s ease;
+            font-size: 1.1rem;
         }
-        
-        .faq summary:hover {
-            background: #fdecea;
+
+        .faq-item summary:hover {
+            background: #e74c3c;
+            color: white;
         }
-        
-        .faq details[open] summary {
-            background: #fdecea;
-            border-bottom: 1px solid #eee;
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .faq details p {
-            padding: 20px;
+
+        .faq-item p {
+            padding: 1.5rem;
             color: #666;
         }
-        
+
         /* Final CTA */
         .final-cta {
             background: #1a1a2e;
@@ -348,169 +349,165 @@
             text-align: center;
             padding: 80px 0;
         }
-        
+
         .final-cta h2 {
-            font-size: 2.5rem;
+            color: white;
             margin-bottom: 1rem;
         }
-        
+
         .final-cta p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
-        
-        .final-cta-buttons {
+
+        .cta-buttons {
             display: flex;
-            gap: 20px;
+            gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         /* Footer */
         footer {
             background: #1a1a2e;
             color: white;
             padding: 40px 0 20px;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 20px;
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
-        
-        .footer-section h3 {
-            margin-bottom: 15px;
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
             color: #e74c3c;
         }
-        
+
         .footer-section ul {
             list-style: none;
         }
-        
+
         .footer-section ul li {
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
         }
-        
+
         .footer-section ul li a {
             color: #ccc;
             text-decoration: none;
-            transition: color 0.3s ease;
         }
-        
+
         .footer-section ul li a:hover {
             color: #e74c3c;
         }
-        
+
         .footer-bottom {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 2rem;
             border-top: 1px solid #333;
             color: #ccc;
         }
-        
+
         /* Sticky Bottom Bar */
-        .sticky-bottom {
+        .sticky-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
             background: #1a1a2e;
-            padding: 15px 20px;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            padding: 10px;
+            box-shadow: 0 -2px 20px rgba(0,0,0,0.1);
             z-index: 9999;
         }
-        
-        .sticky-bottom .btn {
-            flex: 1;
-            max-width: 200px;
-            text-align: center;
+
+        .sticky-buttons {
+            display: flex;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
         }
-        
-        /* Responsive Design */
+
+        .sticky-buttons .btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        /* Media Queries */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 3rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .about h2 {
-                font-size: 2.2rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero {
-                padding: 80px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-ctas {
-                flex-direction: column;
-                align-items: center;
+                font-size: 2.8rem;
             }
             
             .trust-items {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
             }
             
             .services-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
             }
             
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .hero .tagline {
+                font-size: 1.1rem;
             }
             
-            .steps {
-                grid-template-columns: 1fr;
-            }
-            
-            .final-cta-buttons {
+            .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
             
-            .sticky-bottom {
-                flex-direction: column;
-                gap: 10px;
+            .section h2 {
+                font-size: 2rem;
             }
             
-            .sticky-bottom .btn {
-                max-width: none;
+            .trust-items {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .services-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
             }
         }
-        
+
         @media (max-width: 480px) {
             .container {
                 padding: 0 15px;
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
-            .trust-items {
-                grid-template-columns: 1fr;
+            .section {
+                padding: 60px 0;
             }
             
-            .features-grid {
-                grid-template-columns: 1fr;
+            .btn {
+                padding: 12px 24px;
+                font-size: 14px;
             }
             
-            .areas-list {
-                justify-content: flex-start;
+            .btn-large {
+                padding: 14px 28px;
+                font-size: 16px;
             }
         }
     </style>
@@ -521,10 +518,10 @@
         <div class="container">
             <div class="hero-content">
                 <h1>lukes junk removal</h1>
-                <p class="subtitle">Your trusted home services experts in Your City, ST</p>
-                <div class="hero-ctas">
+                <p class="tagline">Professional junk removal services you can trust in Your City, ST</p>
+                <div class="hero-buttons">
                     <a href="tel:+18475053640" class="btn btn-large">📞 Call Now</a>
-                    <a href="tel:+18475053640" class="btn btn-large">📋 Free Estimate</a>
+                    <a href="tel:+18475053640" class="btn btn-large btn-outline">📋 Free Estimate</a>
                 </div>
             </div>
         </div>
@@ -536,7 +533,7 @@
             <div class="trust-items">
                 <div class="trust-item">
                     <span>🛡️</span>
-                    <span>Licensed & Insured</span>
+                    <span>Licensed and Insured</span>
                 </div>
                 <div class="trust-item">
                     <span>💰</span>
@@ -555,53 +552,59 @@
     </section>
 
     <!-- About Section -->
-    <section class="section about">
+    <section class="section">
         <div class="container">
-            <h2>Your Local Home Services Experts in Your City</h2>
-            <p>At Luke's Junk Removal, we've been serving Your City and surrounding areas with reliable, professional home services for years. Our experienced team specializes in general repair, installation, maintenance, inspection, emergency service, and consultation. We understand that your home is your biggest investment, which is why we treat every project with the care and attention it deserves. From routine maintenance to emergency repairs, we're here when you need us most. Our commitment to quality workmanship, fair pricing, and exceptional customer service has made us the trusted choice for homeowners throughout the region.</p>
-            <a href="tel:+18475053640" class="btn">Get Your Free Quote Today</a>
+            <h2>Your Local home services Experts in Your City</h2>
+            <div class="about-content">
+                <p>For over a decade, Luke's Junk Removal has been Your City's trusted partner for comprehensive home services. We understand that your home is your sanctuary, which is why we approach every project with meticulous attention to detail and unwavering professionalism.</p>
+                
+                <p>Our certified technicians bring years of experience to every job, from routine maintenance and repairs to complex installations and emergency services. We pride ourselves on transparent pricing, reliable scheduling, and exceptional workmanship that stands the test of time. When you choose Luke's Junk Removal, you're choosing a local business that genuinely cares about your satisfaction and your community.</p>
+                
+                <p>Whether you need a quick repair, scheduled maintenance, or expert consultation, we're here to help. Our commitment to quality service and honest communication has earned us hundreds of five-star reviews from satisfied customers throughout Your City and surrounding areas.</p>
+                
+                <a href="tel:+18475053640" class="btn btn-large">Get Your Free Estimate</a>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
-            <h2 style="text-align: center; color: #1a1a2e; font-size: 2.5rem; margin-bottom: 2rem;">Our Home Services</h2>
+            <h2>Our home services Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/fdecea/e74c3c?text=General+Repair" alt="General Repair Services">
                     <h3>General Repair</h3>
-                    <p>From leaky faucets to electrical issues, our skilled technicians handle all types of home repairs with precision and care.</p>
+                    <p>From minor fixes to major repairs, our skilled technicians handle all types of home repair needs with precision and care.</p>
                     <a href="tel:+18475053640" class="btn">Schedule Repair</a>
                 </div>
+                
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/fdecea/e74c3c?text=Installation" alt="Installation Services">
                     <h3>Installation</h3>
-                    <p>Professional installation services for fixtures, appliances, and home improvements to ensure everything works perfectly.</p>
+                    <p>Professional installation services for fixtures, appliances, and home systems. We ensure everything is installed correctly the first time.</p>
                     <a href="tel:+18475053640" class="btn">Book Installation</a>
                 </div>
+                
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/fdecea/e74c3c?text=Maintenance" alt="Maintenance Services">
                     <h3>Maintenance</h3>
-                    <p>Preventive maintenance programs to keep your home systems running smoothly and avoid costly emergency repairs.</p>
+                    <p>Regular maintenance keeps your home running smoothly. Our preventive services help you avoid costly repairs down the road.</p>
                     <a href="tel:+18475053640" class="btn">Schedule Service</a>
                 </div>
+                
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/fdecea/e74c3c?text=Inspection" alt="Inspection Services">
                     <h3>Inspection</h3>
-                    <p>Thorough inspections to identify potential issues before they become major problems, saving you time and money.</p>
+                    <p>Thorough inspections identify potential issues before they become expensive problems. Get peace of mind with our detailed assessments.</p>
                     <a href="tel:+18475053640" class="btn">Book Inspection</a>
                 </div>
+                
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/fdecea/e74c3c?text=Emergency+Service" alt="Emergency Services">
                     <h3>Emergency Service</h3>
-                    <p>24/7 emergency response for urgent home issues that can't wait. We're here when you need us most.</p>
+                    <p>When disaster strikes, we're ready to respond quickly. Our emergency services are available when you need help most.</p>
                     <a href="tel:+18475053640" class="btn">Emergency Call</a>
                 </div>
+                
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/fdecea/e74c3c?text=Consultation" alt="Consultation Services">
                     <h3>Consultation</h3>
-                    <p>Expert advice and project planning to help you make informed decisions about your home improvement needs.</p>
+                    <p>Expert advice and planning for your home improvement projects. We help you make informed decisions and create realistic timelines.</p>
                     <a href="tel:+18475053640" class="btn">Get Consultation</a>
                 </div>
             </div>
@@ -611,37 +614,41 @@
     <!-- Why Choose Us Section -->
     <section class="section">
         <div class="container">
-            <h2 style="text-align: center; color: #1a1a2e; font-size: 2.5rem; margin-bottom: 2rem;">Why Choose Luke's Junk Removal?</h2>
+            <h2>Why Choose Luke's Junk Removal?</h2>
             <div class="features-grid">
                 <div class="feature">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Years of Experience</h3>
-                    <p>Our team brings decades of combined experience in home services, ensuring every job is done right the first time. We've seen it all and know how to handle any challenge that comes our way.</p>
+                    <div class="feature-icon">🎯</div>
+                    <h3>Proven Experience</h3>
+                    <p>With over 10 years in the home services industry, we've tackled every type of project imaginable. Our experience means efficient solutions and quality results you can count on.</p>
                 </div>
+                
                 <div class="feature">
                     <div class="feature-icon">⚡</div>
-                    <h3>Quality Workmanship</h3>
-                    <p>We take pride in our work and stand behind every service we provide. Using only high-quality materials and proven techniques, we deliver results that last.</p>
+                    <h3>Unmatched Quality</h3>
+                    <p>We use premium materials, modern techniques, and rigorous quality standards on every job. Your satisfaction is guaranteed, and we stand behind our work with comprehensive warranties.</p>
                 </div>
+                
                 <div class="feature">
-                    <div class="feature-icon">📍</div>
+                    <div class="feature-icon">🏘️</div>
                     <h3>Local Knowledge</h3>
-                    <p>As a locally owned business, we understand the unique needs of homes in Your City and surrounding areas. We're part of this community and committed to serving our neighbors.</p>
+                    <p>As Your City locals, we understand the unique challenges homes face in our area. Our solutions are tailored to local conditions, building codes, and community standards.</p>
                 </div>
+                
                 <div class="feature">
                     <div class="feature-icon">✅</div>
                     <h3>Satisfaction Guarantee</h3>
-                    <p>Your satisfaction is our top priority. We're not happy until you're completely satisfied with our work. If something isn't right, we'll make it right at no extra cost.</p>
+                    <p>Your happiness is our priority. If you're not completely satisfied with our work, we'll make it right. That's our promise to every customer we serve.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Service Areas Section -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
-            <h2 style="text-align: center; color: #1a1a2e; font-size: 2.5rem; margin-bottom: 2rem;">Service Areas</h2>
-            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem; color: #555;">We proudly serve Your City and the surrounding communities. No matter where you're located in our service area, we're just a phone call away and ready to help with all your home service needs.</p>
+            <h2>Proudly Serving Your City and Surrounding Areas</h2>
+            <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">We're proud to serve homeowners throughout Your City and the surrounding communities. Our local presence means faster response times and personalized service that larger companies simply can't match.</p>
+            
             <div class="areas-list">
                 <a href="tel:+18475053640" class="area-tag">Your City</a>
                 <a href="tel:+18475053640" class="area-tag">Downtown Your City</a>
@@ -649,9 +656,12 @@
                 <a href="tel:+18475053640" class="area-tag">South Your City</a>
                 <a href="tel:+18475053640" class="area-tag">East Your City</a>
                 <a href="tel:+18475053640" class="area-tag">West Your City</a>
-                <a href="tel:+18475053640" class="area-tag">Your City Heights</a>
-                <a href="tel:+18475053640" class="area-tag">Your City Gardens</a>
-                <a href="tel:+18475053640" class="area-tag">Your City Valley</a>
+                <a href="tel:+18475053640" class="area-tag">Your City Metro</a>
+                <a href="tel:+18475053640" class="area-tag">Surrounding Areas</a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>Don't see your area listed? Give us a call – we may still be able to help!</p>
             </div>
         </div>
     </section>
@@ -659,51 +669,57 @@
     <!-- How It Works Section -->
     <section class="section">
         <div class="container">
-            <h2 style="text-align: center; color: #1a1a2e; font-size: 2.5rem; margin-bottom: 2rem;">How It Works</h2>
+            <h2>How It Works</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Call Us</h3>
-                    <p>Give us a call at <a href="tel:+18475053640" style="color: #e74c3c; text-decoration: none;">(847) 505-3640</a> to discuss your home service needs. We'll listen carefully and ask the right questions to understand your project.</p>
+                    <h3>Call Us Today</h3>
+                    <p>Give us a call at <a href="tel:+18475053640" style="color: #e74c3c; font-weight: 600;">(847) 505-3640</a> to discuss your project. We'll ask a few questions to understand your needs and schedule a convenient time for your free estimate.</p>
                 </div>
+                
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Free Estimate</h3>
-                    <p>We'll schedule a convenient time to visit your property and provide a detailed, no-obligation estimate. You'll know exactly what to expect before we begin.</p>
+                    <p>Our experienced technician will visit your home to assess the work needed. We'll provide a detailed, written estimate with no hidden fees or surprise charges.</p>
                 </div>
+                
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Expert Service</h3>
-                    <p>Our experienced team arrives on time with all necessary tools and materials. We complete the work efficiently while maintaining the highest quality standards.</p>
+                    <p>Once you approve the estimate, we'll schedule your service at a time that works for you. Our team arrives on time, works efficiently, and cleans up when we're done.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
-            <h2 style="text-align: center; color: #1a1a2e; font-size: 2.5rem; margin-bottom: 3rem;">Frequently Asked Questions</h2>
-            <div class="faq">
-                <details>
-                    <summary>How much do your home services cost?</summary>
-                    <p>Our pricing varies depending on the type and scope of work needed. We provide free, detailed estimates for all services so you know exactly what to expect. We believe in transparent, fair pricing with no hidden fees or surprises.</p>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>How much do your services cost?</summary>
+                    <p>Our pricing varies based on the scope and complexity of each project. We provide detailed, written estimates for all work before we begin. Every estimate is completely free with no obligation, and we never charge hidden fees or surprise charges.</p>
                 </details>
-                <details>
-                    <summary>How quickly can you complete my project?</summary>
-                    <p>Timeline depends on the complexity of your project. Simple repairs can often be completed the same day, while larger installations or maintenance projects may take several days. We'll provide a clear timeline during your free estimate and keep you updated throughout the process.</p>
+                
+                <details class="faq-item">
+                    <summary>How quickly can you start my project?</summary>
+                    <p>Most projects can be scheduled within 1-2 weeks, depending on the scope of work and material availability. Emergency repairs are prioritized and often handled the same day or next day. During your free estimate, we'll provide a realistic timeline for your specific project.</p>
                 </details>
-                <details>
+                
+                <details class="faq-item">
                     <summary>Are you licensed and insured?</summary>
-                    <p>Yes, we are fully licensed and insured for your protection and peace of mind. We carry both liability insurance and workers' compensation coverage. You can request to see our credentials at any time.</p>
+                    <p>Yes, Luke's Junk Removal is fully licensed and insured for your protection. We carry both liability insurance and workers' compensation insurance. We're happy to provide proof of insurance upon request.</p>
                 </details>
-                <details>
-                    <summary>Do you offer any warranty on your work?</summary>
-                    <p>Absolutely! We stand behind all our work with a comprehensive warranty. The specific terms vary depending on the type of service, but we guarantee your satisfaction and will return to address any issues at no additional cost.</p>
+                
+                <details class="faq-item">
+                    <summary>Do you offer warranties on your work?</summary>
+                    <p>Absolutely! We stand behind all our work with comprehensive warranties. The length and terms vary by service type, but we guarantee you'll be satisfied with the quality of our workmanship. If any issues arise, we'll return to make things right at no charge to you.</p>
                 </details>
-                <details>
-                    <summary>Do you offer emergency services?</summary>
-                    <p>Yes, we provide 24/7 emergency service for urgent issues that can't wait. Whether it's a burst pipe, electrical problem, or other emergency, call us immediately and we'll respond as quickly as possible to minimize damage and restore safety.</p>
+                
+                <details class="faq-item">
+                    <summary>Do you provide emergency services?</summary>
+                    <p>Yes, we understand that home emergencies don't wait for business hours. We offer emergency services for urgent situations that need immediate attention. Call us at (847) 505-3640 anytime, and we'll respond as quickly as possible.</p>
                 </details>
             </div>
         </div>
@@ -713,11 +729,11 @@
     <section class="final-cta">
         <div class="container">
             <h2>Ready to Get Started?</h2>
-            <p>Don't wait - your home service needs won't fix themselves. Call now for your free estimate!</p>
-            <div class="final-cta-buttons">
+            <p>Don't wait another day to tackle that home project. Our expert team is standing by to provide the professional service you deserve.</p>
+            <div class="cta-buttons">
                 <a href="tel:+18475053640" class="btn btn-large">📞 Call (847) 505-3640</a>
-                <a href="tel:+18475053640" class="btn btn-large">📋 Free Estimate</a>
-                <a href="tel:+18475053640" class="btn btn-large">🚨 Emergency Service</a>
+                <a href="tel:+18475053640" class="btn btn-large">🔧 Schedule Service</a>
+                <a href="tel:+18475053640" class="btn btn-large">💰 Free Estimate</a>
             </div>
         </div>
     </section>
@@ -727,13 +743,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Luke's Junk Removal</h3>
+                    <h4>lukes junk removal</h4>
                     <p>Your City, ST</p>
-                    <p>Phone: <a href="tel:+18475053640">(847) 505-3640</a></p>
-                    <p>Professional home services you can trust</p>
+                    <p><a href="tel:+18475053640" style="color: #e74c3c; font-weight: 600;">(847) 505-3640</a></p>
                 </div>
+                
                 <div class="footer-section">
-                    <h3>Our Services</h3>
+                    <h4>Our Services</h4>
                     <ul>
                         <li><a href="tel:+18475053640">General Repair</a></li>
                         <li><a href="tel:+18475053640">Installation</a></li>
@@ -743,28 +759,31 @@
                         <li><a href="tel:+18475053640">Consultation</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h3>Service Areas</h3>
+                    <h4>Service Areas</h4>
                     <ul>
                         <li><a href="tel:+18475053640">Your City</a></li>
                         <li><a href="tel:+18475053640">Downtown Your City</a></li>
                         <li><a href="tel:+18475053640">North Your City</a></li>
                         <li><a href="tel:+18475053640">South Your City</a></li>
-                        <li><a href="tel:+18475053640">East Your City</a></li>
-                        <li><a href="tel:+18475053640">West Your City</a></li>
+                        <li><a href="tel:+18475053640">Surrounding Areas</a></li>
                     </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 Luke's Junk Removal. All rights reserved. Licensed & Insured.</p>
+                <p>&copy; 2024 Luke's Junk Removal. Licensed and insured home services in Your City, ST.</p>
             </div>
         </div>
     </footer>
 
     <!-- Sticky Bottom Bar -->
-    <div class="sticky-bottom">
-        <a href="tel:+18475053640" class="btn">📞 Call Now</a>
-        <a href="tel:+18475053640" class="btn">📋 Free Quote</a>
+    <div class="sticky-bar">
+        <div class="sticky-buttons">
+            <a href="tel:+18475053640" class="btn">📞 Call Now</a>
+            <a href="tel:+18475053640" class="btn btn-outline">Free Quote</a>
+        </div>
     </div>
 </body>
 </html>
