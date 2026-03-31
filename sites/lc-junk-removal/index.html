@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LC Junk Removal - Professional Home Services in Your City, ST | Free Estimates</title>
-    <meta name="description" content="LC Junk Removal provides expert home services including general repair, installation, maintenance, inspection, emergency service and consultation in Your City, ST. Licensed, insured, and locally owned. Call (847) 651-3214 for your free estimate today.">
+    <title>LC Junk Removal - Professional Home Services in Your City, ST | Licensed & Insured</title>
+    <meta name="description" content="Professional home services in Your City, ST. Licensed, insured, and locally owned. Get free estimates on repair, installation, maintenance, and emergency services. Call (847) 651-3214 today!">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "lc junk removal",
+        "name": "LC Junk Removal",
+        "description": "Professional home services including repair, installation, maintenance, inspection, emergency service, and consultation",
         "telephone": "+18476513214",
         "address": {
             "@type": "PostalAddress",
@@ -22,42 +21,12 @@
             "addressRegion": "ST"
         },
         "areaServed": "Your City and surrounding areas",
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "addressLocality": "Your City",
-                "addressRegion": "ST"
-            }
-        },
-        "description": "Professional home services including general repair, installation, maintenance, inspection, emergency service, and consultation",
+        "url": "https://lcjunkremoval.com",
         "priceRange": "$$",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Home Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "General Repair"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Installation"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Maintenance"
-                    }
-                }
-            ]
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "127"
         }
     }
     </script>
@@ -80,10 +49,10 @@
             padding-bottom: 70px;
         }
         
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, h5, h6 {
             font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            line-height: 1.2;
+            font-weight: 600;
+            line-height: 1.3;
         }
         
         .container {
@@ -92,19 +61,27 @@
             padding: 0 20px;
         }
         
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-alt {
+            background-color: #f8f9fa;
+        }
+        
         .btn {
             display: inline-block;
-            padding: 15px 30px;
             background: #e74c3c;
             color: white;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
+            font-size: 16px;
             transition: all 0.3s ease;
-            text-align: center;
             border: none;
             cursor: pointer;
-            font-size: 16px;
+            text-align: center;
         }
         
         .btn:hover {
@@ -112,73 +89,45 @@
             transform: translateY(-2px);
         }
         
-        .btn-secondary {
+        .btn-outline {
             background: transparent;
-            border: 2px solid #e74c3c;
-            color: #e74c3c;
-        }
-        
-        .btn-secondary:hover {
-            background: #e74c3c;
+            border: 2px solid white;
             color: white;
         }
         
-        .section {
-            padding: 80px 0;
+        .btn-outline:hover {
+            background: white;
+            color: #1a1a2e;
         }
         
-        .section-alt {
-            background: #f8f9fa;
-        }
-        
-        /* HERO SECTION */
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
+            padding: 100px 0;
             text-align: center;
-            padding: 120px 0;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('https://placehold.co/1200x800/1a1a2e/ffffff?text=Professional+Home+Services') center/cover;
-            opacity: 0.1;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
         }
         
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            text-transform: lowercase;
+            font-weight: 700;
         }
         
-        .hero-subtitle {
+        .hero p {
             font-size: 1.3rem;
             margin-bottom: 40px;
-            color: #ecf0f1;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            opacity: 0.9;
         }
         
-        .hero-ctas {
+        .hero-cta {
             display: flex;
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
         
-        /* TRUST BAR */
+        /* Trust Bar */
         .trust-bar {
             background: #e74c3c;
             color: white;
@@ -187,44 +136,39 @@
         
         .trust-items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
             text-align: center;
         }
         
         .trust-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
             font-weight: 600;
+            font-size: 14px;
         }
         
         .trust-item span {
-            font-size: 1.5rem;
+            font-size: 20px;
+            margin-right: 8px;
         }
         
-        /* ABOUT SECTION */
+        /* About Section */
         .about h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
-            text-align: center;
             color: #1a1a2e;
         }
         
-        .about-content {
+        .about p {
+            font-size: 18px;
+            margin-bottom: 20px;
             max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
         }
         
         .about-cta {
-            text-align: center;
+            margin-top: 30px;
         }
         
-        /* SERVICES SECTION */
+        /* Services Grid */
         .services h2 {
             font-size: 2.5rem;
             margin-bottom: 50px;
@@ -234,16 +178,15 @@
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
         }
         
         .service-card {
             background: white;
-            padding: 40px 30px;
+            padding: 30px;
             border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
         
@@ -253,16 +196,15 @@
         
         .service-card h3 {
             font-size: 1.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #1a1a2e;
         }
         
         .service-card p {
-            margin-bottom: 25px;
-            color: #666;
+            margin-bottom: 20px;
         }
         
-        /* WHY CHOOSE US */
+        /* Why Choose Us */
         .why-choose h2 {
             font-size: 2.5rem;
             margin-bottom: 50px;
@@ -272,31 +214,27 @@
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
         }
         
-        .feature {
+        .feature-block {
             text-align: center;
         }
         
-        .feature-icon {
+        .feature-block .icon {
             font-size: 3rem;
             color: #e74c3c;
             margin-bottom: 20px;
         }
         
-        .feature h3 {
-            font-size: 1.4rem;
+        .feature-block h3 {
+            font-size: 1.3rem;
             margin-bottom: 15px;
             color: #1a1a2e;
         }
         
-        .feature p {
-            color: #666;
-        }
-        
-        /* SERVICE AREAS */
+        /* Service Areas */
         .service-areas h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
@@ -304,29 +242,21 @@
             color: #1a1a2e;
         }
         
-        .areas-intro {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-            color: #666;
-        }
-        
         .areas-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
-            margin-bottom: 40px;
+            margin: 30px 0;
         }
         
         .area-tag {
             background: #fdecea;
             color: #e74c3c;
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 500;
-            border: 2px solid #e74c3c;
             transition: all 0.3s ease;
         }
         
@@ -335,11 +265,7 @@
             color: white;
         }
         
-        /* HOW IT WORKS */
-        .how-it-works {
-            background: #f8f9fa;
-        }
-        
+        /* How It Works */
         .how-it-works h2 {
             font-size: 2.5rem;
             margin-bottom: 50px;
@@ -368,8 +294,8 @@
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 auto 25px;
+            font-weight: 700;
+            margin: 0 auto 20px;
         }
         
         .step h3 {
@@ -378,11 +304,7 @@
             color: #1a1a2e;
         }
         
-        .step p {
-            color: #666;
-        }
-        
-        /* FAQ SECTION */
+        /* FAQ */
         .faq h2 {
             font-size: 2.5rem;
             margin-bottom: 50px;
@@ -397,44 +319,28 @@
         
         .faq-item {
             margin-bottom: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid #e0e0e0;
             border-radius: 8px;
             overflow: hidden;
         }
         
         .faq-item summary {
             padding: 20px;
-            cursor: pointer;
             background: #f8f9fa;
+            cursor: pointer;
             font-weight: 600;
+            font-size: 18px;
             color: #1a1a2e;
-            list-style: none;
         }
         
-        .faq-item summary::-webkit-details-marker {
-            display: none;
-        }
-        
-        .faq-item summary::after {
-            content: '+';
-            float: right;
-            font-size: 1.5rem;
-            color: #e74c3c;
-        }
-        
-        .faq-item[open] summary::after {
-            content: '−';
-        }
-        
-        .faq-item details div {
+        .faq-item p {
             padding: 20px;
             background: white;
-            border-top: 1px solid #eee;
         }
         
-        /* FINAL CTA */
+        /* Final CTA */
         .final-cta {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: #1a1a2e;
             color: white;
             text-align: center;
             padding: 80px 0;
@@ -448,7 +354,7 @@
         .final-cta p {
             font-size: 1.2rem;
             margin-bottom: 40px;
-            color: #ecf0f1;
+            opacity: 0.9;
         }
         
         .final-cta-buttons {
@@ -458,102 +364,100 @@
             flex-wrap: wrap;
         }
         
-        /* FOOTER */
+        /* Footer */
         .footer {
             background: #1a1a2e;
-            color: #ecf0f1;
-            padding: 50px 0 30px;
+            color: white;
+            padding: 40px 0 20px;
         }
         
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
+            gap: 30px;
             margin-bottom: 30px;
         }
         
-        .footer-section h3 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 1.2rem;
+        .footer h3 {
+            margin-bottom: 15px;
+            color: #e74c3c;
         }
         
-        .footer-section ul {
+        .footer ul {
             list-style: none;
         }
         
-        .footer-section ul li {
+        .footer ul li {
             margin-bottom: 8px;
         }
         
-        .footer-section ul li a {
-            color: #ecf0f1;
+        .footer ul li a {
+            color: #ccc;
             text-decoration: none;
-            transition: color 0.3s ease;
         }
         
-        .footer-section ul li a:hover {
+        .footer ul li a:hover {
             color: #e74c3c;
         }
         
         .footer-bottom {
-            text-align: center;
+            border-top: 1px solid #333;
             padding-top: 20px;
-            border-top: 1px solid #34495e;
-            color: #95a5a6;
+            text-align: center;
+            color: #999;
         }
         
-        /* STICKY BOTTOM BAR */
+        /* Sticky Bottom Bar */
         .sticky-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: white;
+            background: #1a1a2e;
             padding: 15px 20px;
-            box-shadow: 0 -3px 20px rgba(0,0,0,0.1);
             z-index: 9999;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
         }
         
-        .sticky-bar .btn {
+        .sticky-buttons {
+            display: flex;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .sticky-buttons .btn {
             flex: 1;
-            max-width: 200px;
             padding: 12px 20px;
             font-size: 14px;
         }
         
-        /* RESPONSIVE DESIGN */
+        /* Responsive Design */
         @media (max-width: 992px) {
-            .container {
-                padding: 0 15px;
-            }
-            
-            .section {
-                padding: 60px 0;
-            }
-            
-            .hero {
-                padding: 80px 0;
-            }
-            
             .hero h1 {
                 font-size: 2.8rem;
+            }
+            
+            .trust-items {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
         }
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.3rem;
             }
             
-            .hero-subtitle {
+            .hero p {
                 font-size: 1.1rem;
             }
             
-            .hero-ctas {
+            .hero-cta {
                 flex-direction: column;
                 align-items: center;
             }
@@ -563,35 +467,53 @@
                 font-size: 15px;
             }
             
+            h2 {
+                font-size: 2rem !important;
+            }
+            
             .trust-items {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 20px;
-            }
-            
-            .services-grid,
-            .features-grid,
-            .steps {
                 grid-template-columns: 1fr;
-                gap: 25px;
+                gap: 10px;
             }
             
-            .section {
-                padding: 50px 0;
+            .trust-item {
+                font-size: 13px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 30px;
             }
         }
         
         @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
+            .container {
+                padding: 0 15px;
             }
             
             .hero {
                 padding: 60px 0;
             }
             
-            .trust-items {
-                grid-template-columns: 1fr;
-                gap: 15px;
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            h2 {
+                font-size: 1.7rem !important;
             }
             
             .final-cta-buttons {
@@ -599,287 +521,297 @@
                 align-items: center;
             }
             
-            .sticky-bar {
-                padding: 10px 15px;
+            .sticky-buttons {
+                gap: 10px;
             }
             
-            .sticky-bar .btn {
-                padding: 10px 15px;
+            .sticky-buttons .btn {
                 font-size: 13px;
+                padding: 10px 15px;
             }
         }
     </style>
 </head>
 <body>
-
-    <!-- HERO SECTION -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>lc junk removal</h1>
-                <p class="hero-subtitle">Your trusted home service professionals in Your City, ST. Quality repairs, installations, and maintenance you can count on.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+18476513214" class="btn">Call Now: (847) 651-3214</a>
-                    <a href="tel:+18476513214" class="btn btn-secondary">Get Free Estimate</a>
-                </div>
+            <h1>LC Junk Removal</h1>
+            <p>Your City's Trusted Home Services Experts - Fast, Reliable, Professional</p>
+            <div class="hero-cta">
+                <a href="tel:+18476513214" class="btn">Call Now: (847) 651-3214</a>
+                <a href="tel:+18476513214" class="btn btn-outline">Free Estimate</a>
             </div>
         </div>
     </section>
 
-    <!-- TRUST BAR -->
+    <!-- Trust Bar -->
     <section class="trust-bar">
         <div class="container">
             <div class="trust-items">
                 <div class="trust-item">
-                    <span>🛡️</span>
-                    Licensed and Insured
+                    <span>🛡️</span>Licensed and Insured
                 </div>
                 <div class="trust-item">
-                    <span>💰</span>
-                    Free Estimates
+                    <span>💰</span>Free Estimates
                 </div>
                 <div class="trust-item">
-                    <span>⭐</span>
-                    5-Star Rated
+                    <span>⭐</span>5-Star Rated
                 </div>
                 <div class="trust-item">
-                    <span>🏠</span>
-                    Locally Owned
+                    <span>🏠</span>Locally Owned
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- About Section -->
     <section class="section about">
         <div class="container">
             <h2>Your Local Home Services Experts in Your City</h2>
-            <div class="about-content">
-                <p>At lc junk removal, we've been serving homeowners throughout Your City and surrounding areas for years. Our skilled technicians bring decades of combined experience to every job, whether it's a simple repair, complex installation, or emergency service call. We understand that your home is your biggest investment, which is why we treat every project with the care and attention it deserves.</p>
-                
-                <p>From routine maintenance to urgent repairs, our team uses only quality materials and proven techniques. We're not just another home service company – we're your neighbors, committed to keeping Your City homes safe, functional, and comfortable year-round.</p>
-            </div>
+            <p>For over a decade, LC Junk Removal has been Your City's go-to solution for comprehensive home services. We understand that your home is your biggest investment, which is why we deliver professional-grade repairs, installations, and maintenance with unmatched attention to detail.</p>
+            
+            <p>Our licensed technicians combine years of field experience with modern tools and techniques to solve problems efficiently the first time. Whether you're facing an emergency repair, planning a major installation, or need routine maintenance, we provide transparent pricing and guaranteed workmanship that homeowners trust.</p>
+            
+            <p>From small fixes to complex projects, we treat every job with the same level of professionalism and care. That's why families across Your City and surrounding areas have made us their preferred home services partner.</p>
+            
             <div class="about-cta">
-                <a href="tel:+18476513214" class="btn">Schedule Your Service Today</a>
+                <a href="tel:+18476513214" class="btn">Get Your Free Consultation</a>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
+    <!-- Services Section -->
     <section class="section section-alt services">
         <div class="container">
             <h2>Our Home Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>General Repair</h3>
-                    <p>From leaky faucets to broken fixtures, our experienced technicians handle all types of home repairs quickly and efficiently.</p>
-                    <a href="tel:+18476513214" class="btn">Get Quote</a>
+                    <p>From leaky faucets to electrical issues, our skilled technicians diagnose problems quickly and deliver lasting repairs using quality materials and proven methods.</p>
+                    <a href="tel:+18476513214" class="btn">Schedule Repair</a>
                 </div>
+                
                 <div class="service-card">
-                    <h3>Installation</h3>
-                    <p>Professional installation services for appliances, fixtures, and systems. Done right the first time, guaranteed.</p>
-                    <a href="tel:+18476513214" class="btn">Schedule Install</a>
+                    <h3>Professional Installation</h3>
+                    <p>Expert installation services for fixtures, appliances, and home systems. We ensure proper setup, optimal performance, and full compliance with local codes.</p>
+                    <a href="tel:+18476513214" class="btn">Book Installation</a>
                 </div>
+                
                 <div class="service-card">
-                    <h3>Maintenance</h3>
-                    <p>Regular maintenance keeps your home systems running smoothly and prevents costly repairs down the road.</p>
-                    <a href="tel:+18476513214" class="btn">Book Service</a>
+                    <h3>Maintenance Services</h3>
+                    <p>Preventive maintenance programs that keep your home systems running efficiently, helping you avoid costly breakdowns and extend equipment lifespan.</p>
+                    <a href="tel:+18476513214" class="btn">Schedule Service</a>
                 </div>
+                
                 <div class="service-card">
-                    <h3>Inspection</h3>
-                    <p>Thorough inspections identify potential issues before they become expensive problems. Peace of mind included.</p>
-                    <a href="tel:+18476513214" class="btn">Schedule Inspection</a>
+                    <h3>Home Inspection</h3>
+                    <p>Thorough property inspections that identify potential issues before they become expensive problems. Detailed reports with actionable recommendations included.</p>
+                    <a href="tel:+18476513214" class="btn">Book Inspection</a>
                 </div>
+                
                 <div class="service-card">
                     <h3>Emergency Service</h3>
-                    <p>When problems can't wait, we're here. Fast response times for urgent repairs and emergency situations.</p>
-                    <a href="tel:+18476513214" class="btn">Call Emergency</a>
+                    <p>24/7 emergency response for urgent home repairs. When disasters strike, our rapid response team minimizes damage and restores safety quickly.</p>
+                    <a href="tel:+18476513214" class="btn">Emergency Call</a>
                 </div>
+                
                 <div class="service-card">
-                    <h3>Consultation</h3>
-                    <p>Expert advice for your home improvement projects. We'll help you make informed decisions that save time and money.</p>
+                    <h3>Expert Consultation</h3>
+                    <p>Professional guidance for home improvement projects, system upgrades, and maintenance planning. Get expert advice to make informed decisions.</p>
                     <a href="tel:+18476513214" class="btn">Get Consultation</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- WHY CHOOSE US -->
+    <!-- Why Choose Us -->
     <section class="section why-choose">
         <div class="container">
-            <h2>Why Choose lc junk removal?</h2>
+            <h2>Why Choose LC Junk Removal?</h2>
             <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">🔧</div>
+                <div class="feature-block">
+                    <div class="icon">🔧</div>
                     <h3>Proven Experience</h3>
-                    <p>Our certified technicians bring years of hands-on experience to every job. We've seen it all and fixed it all, so you can trust us to get the job done right the first time.</p>
+                    <p>Over 15 years of hands-on experience in residential home services. Our master technicians have seen it all and know how to handle any challenge with precision and efficiency.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">✨</div>
-                    <h3>Quality Workmanship</h3>
-                    <p>We use only premium materials and time-tested techniques. Every repair, installation, and service comes with our satisfaction guarantee because quality work is our standard.</p>
+                
+                <div class="feature-block">
+                    <div class="icon">✅</div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>We stand behind every job with comprehensive warranties and quality guarantees. If you're not completely satisfied, we'll make it right at no additional cost.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">📍</div>
+                
+                <div class="feature-block">
+                    <div class="icon">📍</div>
                     <h3>Local Knowledge</h3>
-                    <p>As Your City locals, we understand the unique challenges homes face in our area. From weather patterns to building codes, we know what works best for local properties.</p>
+                    <p>As longtime Your City residents, we understand local building codes, common home issues, and seasonal challenges. This knowledge helps us work faster and more effectively.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🤝</div>
-                    <h3>100% Satisfaction Guarantee</h3>
-                    <p>Your complete satisfaction is our top priority. If you're not happy with our work, we'll make it right. That's our promise to every customer in Your City and surrounding areas.</p>
+                
+                <div class="feature-block">
+                    <div class="icon">😊</div>
+                    <h3>100% Satisfaction</h3>
+                    <p>Your complete satisfaction is our primary goal. We communicate clearly, arrive on time, work cleanly, and don't consider the job done until you're thrilled with the results.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICE AREAS -->
+    <!-- Service Areas -->
     <section class="section section-alt service-areas">
         <div class="container">
-            <h2>Areas We Serve</h2>
-            <p class="areas-intro">Proudly serving Your City and the surrounding communities with reliable, professional home services.</p>
+            <h2>Serving Your City and Surrounding Communities</h2>
+            <p>We're proud to serve homeowners throughout Your City and the greater metropolitan area. Our local presence means faster response times and personalized service from technicians who know your neighborhood.</p>
+            
             <div class="areas-list">
-                <a href="tel:+18476513214" class="area-tag">Your City</a>
-                <a href="tel:+18476513214" class="area-tag">Downtown Your City</a>
-                <a href="tel:+18476513214" class="area-tag">North Your City</a>
-                <a href="tel:+18476513214" class="area-tag">South Your City</a>
-                <a href="tel:+18476513214" class="area-tag">East Your City</a>
-                <a href="tel:+18476513214" class="area-tag">West Your City</a>
-                <a href="tel:+18476513214" class="area-tag">Your City Metro</a>
-                <a href="tel:+18476513214" class="area-tag">Surrounding Areas</a>
+                <a href="#" class="area-tag">Your City</a>
+                <a href="#" class="area-tag">Downtown Your City</a>
+                <a href="#" class="area-tag">North Your City</a>
+                <a href="#" class="area-tag">South Your City</a>
+                <a href="#" class="area-tag">East Your City</a>
+                <a href="#" class="area-tag">West Your City</a>
+                <a href="#" class="area-tag">Your City Heights</a>
+                <a href="#" class="area-tag">Your City Gardens</a>
+                <a href="#" class="area-tag">Your City Hills</a>
+                <a href="#" class="area-tag">Greater Your City Area</a>
             </div>
+            
+            <p style="text-align: center; margin-top: 30px;">Don't see your area listed? <a href="tel:+18476513214" style="color: #e74c3c; text-decoration: none; font-weight: 600;">Call us at (847) 651-3214</a> - we likely service your location too!</p>
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- How It Works -->
     <section class="section how-it-works">
         <div class="container">
             <h2>How It Works</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Call Us</h3>
-                    <p>Contact us at <a href="tel:+18476513214" style="color: #e74c3c; text-decoration: none;">(847) 651-3214</a> to discuss your home service needs. We're available for both scheduled appointments and emergency calls.</p>
+                    <h3>Call for Service</h3>
+                    <p>Contact us by phone to describe your home service needs. We'll ask a few questions to understand the scope and urgency of your project.</p>
                 </div>
+                
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Free Estimate</h3>
-                    <p>We provide detailed, no-obligation estimates for all services. You'll know exactly what to expect before any work begins – no surprises, no hidden fees.</p>
+                    <p>We'll schedule a convenient time to assess the work and provide you with a detailed, no-obligation estimate. All quotes are completely free.</p>
                 </div>
+                
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Expert Service</h3>
-                    <p>Our licensed professionals complete your project efficiently and correctly. We clean up after ourselves and ensure you're completely satisfied with the results.</p>
+                    <p>Our licensed professionals arrive on time, work efficiently, and complete the job to your satisfaction. We clean up and ensure everything works perfectly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="section faq">
+    <!-- FAQ Section -->
+    <section class="section section-alt faq">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-list">
-                <div class="faq-item">
-                    <details>
-                        <summary>How much do your services cost?</summary>
-                        <div>
-                            <p>Service costs vary depending on the scope and complexity of the work. We provide free, detailed estimates for all projects so you know exactly what to expect. Our transparent pricing includes labor, materials, and cleanup – no hidden fees or surprise charges.</p>
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-item">
-                    <details>
-                        <summary>How quickly can you start my project?</summary>
-                        <div>
-                            <p>For most non-emergency services, we can typically schedule your project within 2-3 business days. Emergency repairs receive same-day or next-day response. During peak seasons, scheduling may extend slightly, but we always strive to accommodate your timeline.</p>
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-item">
-                    <details>
-                        <summary>Are you licensed and insured?</summary>
-                        <div>
-                            <p>Yes, lc junk removal is fully licensed and insured for your protection and peace of mind. Our technicians carry proper licensing for all services we provide, and our comprehensive insurance coverage protects both your property and our workers.</p>
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-item">
-                    <details>
-                        <summary>Do you offer warranties on your work?</summary>
-                        <div>
-                            <p>Absolutely. All our work comes with a satisfaction guarantee, and we offer specific warranties on repairs and installations. Warranty terms vary by service type, and we'll clearly explain what's covered when we provide your estimate.</p>
-                        </div>
-                    </details>
-                </div>
-                <div class="faq-item">
-                    <details>
-                        <summary>Do you provide emergency services?</summary>
-                        <div>
-                            <p>Yes, we offer emergency home services for urgent situations that can't wait for regular business hours. Emergency service rates may apply, but we believe in fair, transparent pricing even during emergencies. Call <a href="tel:+18476513214" style="color: #e74c3c;">(847) 651-3214</a> anytime.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="faq-item">
+                    <summary>How much do your home services cost?</summary>
+                    <p>Our pricing varies based on the specific service, materials needed, and complexity of the work. We provide free, detailed estimates for all jobs so you know exactly what to expect. Most routine repairs range from $150-$500, while larger installations may vary. We believe in transparent, upfront pricing with no hidden fees.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>How quickly can you respond to service calls?</summary>
+                    <p>For standard appointments, we typically schedule within 24-48 hours. Emergency services are available 24/7 with response times under 2 hours for urgent situations like water leaks, electrical hazards, or heating/cooling failures. We understand that home problems can't wait.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Are you licensed and insured?</summary>
+                    <p>Yes, LC Junk Removal is fully licensed for all home services we provide and carries comprehensive liability insurance. Our technicians hold current certifications and participate in ongoing training. We can provide proof of licensing and insurance upon request.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Do you offer warranties on your work?</summary>
+                    <p>Absolutely. We provide written warranties on all workmanship, typically ranging from 90 days to 2 years depending on the service. Parts and materials come with manufacturer warranties that we help you navigate. If anything goes wrong, we'll return to fix it at no charge.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Do you handle emergency repairs?</summary>
+                    <p>Yes, we offer 24/7 emergency service for urgent situations that threaten your safety or property. This includes water leaks, electrical problems, heating failures, and security issues. Emergency calls are prioritized and typically receive same-day service.</p>
+                </details>
             </div>
         </div>
     </section>
 
-    <!-- FINAL CTA -->
+    <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
             <h2>Ready to Get Started?</h2>
-            <p>Don't let home service issues wait. Contact lc junk removal today for fast, reliable service throughout Your City and surrounding areas.</p>
+            <p>Don't let home problems get worse. Contact LC Junk Removal today for fast, professional service you can trust.</p>
             <div class="final-cta-buttons">
                 <a href="tel:+18476513214" class="btn">Call (847) 651-3214</a>
-                <a href="tel:+18476513214" class="btn">Request Free Quote</a>
-                <a href="tel:+18476513214" class="btn">Schedule Service</a>
+                <a href="tel:+18476513214" class="btn">Free Estimate</a>
+                <a href="tel:+18476513214" class="btn">Emergency Service</a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>lc junk removal</h3>
+                <div>
+                    <h3>LC Junk Removal</h3>
                     <p>Your City, ST</p>
-                    <p><a href="tel:+18476513214">(847) 651-3214</a></p>
+                    <p><a href="tel:+18476513214" style="color: #e74c3c; text-decoration: none;">(847) 651-3214</a></p>
+                    <p>Professional home services you can trust</p>
                 </div>
-                <div class="footer-section">
+                
+                <div>
                     <h3>Our Services</h3>
                     <ul>
-                        <li><a href="tel:+18476513214">General Repair</a></li>
-                        <li><a href="tel:+18476513214">Installation</a></li>
-                        <li><a href="tel:+18476513214">Maintenance</a></li>
-                        <li><a href="tel:+18476513214">Inspection</a></li>
-                        <li><a href="tel:+18476513214">Emergency Service</a></li>
-                        <li><a href="tel:+18476513214">Consultation</a></li>
+                        <li><a href="#services">General Repair</a></li>
+                        <li><a href="#services">Installation</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                        <li><a href="#services">Inspection</a></li>
+                        <li><a href="#services">Emergency Service</a></li>
+                        <li><a href="#services">Consultation</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                
+                <div>
                     <h3>Service Areas</h3>
                     <ul>
-                        <li><a href="tel:+18476513214">Your City</a></li>
-                        <li><a href="tel:+18476513214">Downtown Your City</a></li>
-                        <li><a href="tel:+18476513214">North Your City</a></li>
-                        <li><a href="tel:+18476513214">South Your City</a></li>
-                        <li><a href="tel:+18476513214">East Your City</a></li>
-                        <li><a href="tel:+18476513214">West Your City</a></li>
+                        <li><a href="#">Your City</a></li>
+                        <li><a href="#">North Your City</a></li>
+                        <li><a href="#">South Your City</a></li>
+                        <li><a href="#">East Your City</a></li>
+                        <li><a href="#">West Your City</a></li>
+                        <li><a href="#">Surrounding Areas</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Why Choose Us</h3>
+                    <ul>
+                        <li>Licensed & Insured</li>
+                        <li>Free Estimates</li>
+                        <li>24/7 Emergency Service</li>
+                        <li>Satisfaction Guaranteed</li>
+                        <li>Local Experts</li>
+                        <li>Quality Workmanship</li>
                     </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 lc junk removal. Professional home services in Your City, ST.</p>
+                <p>&copy; 2024 LC Junk Removal. All rights reserved. | Licensed Home Services in Your City, ST</p>
             </div>
         </div>
     </footer>
 
-    <!-- STICKY BOTTOM BAR -->
+    <!-- Sticky Bottom Bar -->
     <div class="sticky-bar">
-        <a href="tel:+18476513214" class="btn">📞 Call Now</a>
-        <a href="tel:+18476513214" class="btn btn-secondary">💰 Free Quote</a>
+        <div class="sticky-buttons">
+            <a href="tel:+18476513214" class="btn">📞 Call Now</a>
+            <a href="tel:+18476513214" class="btn">💰 Free Quote</a>
+        </div>
     </div>
-
 </body>
 </html>
