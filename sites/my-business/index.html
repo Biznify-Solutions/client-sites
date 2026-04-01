@@ -1,820 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Business - Professional Home Services in Your City, ST | Licensed & Insured</title>
-    <meta name="description" content="Trusted home services in Your City, ST. Licensed professionals offering repair, installation, maintenance & emergency services. Free estimates & 5-star rated service.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "My Business",
-        "image": "https://placehold.co/600x400/1a1a2e/ffffff?text=My+Business",
-        "telephone": "+18475053640",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Your City",
-            "addressRegion": "ST"
-        },
-        "areaServed": "Your City and surrounding areas",
-        "serviceType": ["General Repair", "Installation", "Maintenance", "Inspection", "Emergency Service", "Consultation"],
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "127"
-        }
-    }
-    </script>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding-bottom: 70px;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            background: #e74c3c;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .btn:hover {
-            background: #c0392b;
-            transform: translateY(-2px);
-        }
-
-        .btn-large {
-            padding: 18px 36px;
-            font-size: 18px;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #e74c3c;
-            border: 2px solid #e74c3c;
-        }
-
-        .btn-outline:hover {
-            background: #e74c3c;
-            color: white;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: #1a1a2e;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero .tagline {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* Trust Bar */
-        .trust-bar {
-            background: #e74c3c;
-            color: white;
-            padding: 20px 0;
-        }
-
-        .trust-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .trust-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            font-weight: 600;
-        }
-
-        .trust-item span {
-            font-size: 1.5rem;
-        }
-
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #1a1a2e;
-        }
-
-        .about p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .about .btn {
-            margin-top: 20px;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .services h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #1a1a2e;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card h3 {
-            color: #1a1a2e;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .service-card p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        /* Why Choose Us */
-        .why-choose {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .why-choose h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #1a1a2e;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-        }
-
-        .feature {
-            text-align: center;
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            color: #e74c3c;
-            margin-bottom: 20px;
-        }
-
-        .feature h3 {
-            color: #1a1a2e;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-
-        .feature p {
-            color: #666;
-        }
-
-        /* Service Areas */
-        .service-areas {
-            padding: 80px 0;
-            background: white;
-            text-align: center;
-        }
-
-        .service-areas h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #1a1a2e;
-        }
-
-        .service-areas p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            color: #666;
-        }
-
-        .areas-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-        }
-
-        .area-tag {
-            background: #fdecea;
-            color: #e74c3c;
-            padding: 8px 16px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .area-tag:hover {
-            background: #e74c3c;
-            color: white;
-        }
-
-        /* How It Works */
-        .how-it-works {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .how-it-works h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #1a1a2e;
-        }
-
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .step {
-            text-align: center;
-            position: relative;
-        }
-
-        .step-number {
-            background: #e74c3c;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 auto 20px;
-        }
-
-        .step h3 {
-            color: #1a1a2e;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-
-        .step p {
-            color: #666;
-        }
-
-        /* FAQ */
-        .faq {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .faq h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #1a1a2e;
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq details {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-        }
-
-        .faq summary {
-            padding: 20px;
-            background: #f8f9fa;
-            cursor: pointer;
-            font-weight: 600;
-            color: #1a1a2e;
-            border-radius: 6px;
-        }
-
-        .faq summary:hover {
-            background: #fdecea;
-        }
-
-        .faq details[open] summary {
-            border-bottom: 1px solid #ddd;
-            border-radius: 6px 6px 0 0;
-        }
-
-        .faq-content {
-            padding: 20px;
-            color: #666;
-        }
-
-        /* Final CTA */
-        .final-cta {
-            padding: 80px 0;
-            background: #1a1a2e;
-            color: white;
-            text-align: center;
-        }
-
-        .final-cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .final-cta p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-
-        .final-cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* Footer */
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 50px 0 30px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 20px;
-            color: #e74c3c;
-            font-size: 1.2rem;
-        }
-
-        .footer-section p,
-        .footer-section a {
-            color: #ccc;
-            text-decoration: none;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .footer-section a:hover {
-            color: #e74c3c;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 20px;
-            text-align: center;
-            color: #999;
-        }
-
-        /* Sticky Bottom Bar */
-        .sticky-bottom {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            border-top: 2px solid #e74c3c;
-            padding: 15px;
-            z-index: 9999;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-        }
-
-        .sticky-buttons {
-            display: flex;
-            gap: 15px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .sticky-buttons .btn {
-            flex: 1;
-            padding: 12px;
-            font-size: 14px;
-        }
-
-        /* Media Queries */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.1rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 60px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .trust-items {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-            
-            .final-cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .trust-items {
-                grid-template-columns: 1fr;
-            }
-            
-            .trust-item {
-                font-size: 0.9rem;
-            }
-            
-            section {
-                padding: 50px 0;
-            }
-            
-            h2 {
-                font-size: 2rem !important;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Business | Construction company Services in Mobile, Alabama</title>
+<meta name="description" content="My Business provides expert Construction company services in Mobile, Alabama and surrounding areas. Call (251) 767-3750 for a free estimate today!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"My Business","telephone":"(251) 767-3750","address":{"@type":"PostalAddress","addressLocality":"Mobile","addressRegion":"Alabama"},"areaServed":[{"@type":"City","name":"null"}]}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:#0a1628;line-height:1.7;padding-bottom:80px}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;line-height:1.2}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{position:fixed;top:0;left:0;width:100%;z-index:10000;transition:all .3s;padding:16px 0}
+.nav.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.1);padding:10px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
+.nav-logo{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;color:#fff;transition:color .3s}
+.nav.scrolled .nav-logo{color:#0a1628}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.9);font-weight:500;font-size:.95rem;transition:color .3s}
+.nav-links a:hover{color:#38bdf8}
+.nav.scrolled .nav-links a{color:#0a1628}
+.nav.scrolled .nav-links a:hover{color:#2563eb}
+.nav-cta{background:linear-gradient(135deg,#2563eb,#38bdf8);color:#fff!important;padding:10px 24px;border-radius:8px;font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(37,99,235,.4)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:10001}
+.hamburger span{width:28px;height:3px;background:#fff;transition:all .3s;border-radius:2px}
+.nav.scrolled .hamburger span{background:#0a1628}
+.mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,22,40,.98);z-index:10000;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;transition:opacity .3s}
+.mobile-menu.open{display:flex;opacity:1}
+.mobile-menu a{color:#fff;font-family:'Oswald',sans-serif;font-size:1.8rem;font-weight:600}
+.mobile-menu .nav-cta{font-size:1.2rem;padding:16px 40px;margin-top:16px}
+.close-menu{position:absolute;top:24px;right:24px;font-size:2rem;color:#fff;cursor:pointer;background:none;border:none}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(10,22,40,.75),rgba(10,22,40,.85)),url('https://placehold.co/1920x1080/0a1628/2563eb?text=CONSTRUCTION%20COMPANY') center/cover no-repeat;padding:120px 24px 80px;position:relative}
+.hero h1{font-size:3.5rem;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.3);margin-bottom:16px;letter-spacing:1px}
+.hero .tagline{font-size:1.3rem;color:#38bdf8;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:2px}
+.hero .subtitle{font-size:1.15rem;color:rgba(255,255,255,.85);max-width:600px;margin:0 auto 32px}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:18px 40px;font-family:'Oswald',sans-serif;font-weight:700;font-size:1.1rem;border-radius:8px;transition:all .25s;cursor:pointer;text-transform:uppercase;letter-spacing:1px}
+.btn-primary{background:linear-gradient(135deg,#2563eb,#38bdf8);color:#fff;border:none}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(37,99,235,.4)}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+.btn-outline:hover{background:#fff;color:#0a1628;transform:translateY(-3px)}
+.scroll-arrow{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:#fff;font-size:2rem;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-12px)}}
+.trust-bar{background:linear-gradient(135deg,#2563eb,#38bdf8);padding:20px 0}
+.trust-items{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.trust-item{color:#fff;font-weight:700;font-size:.95rem}
+.trust-item span{display:block;font-size:1.4rem;margin-bottom:4px}
+.section{padding:80px 0}
+.section-light{background:#f8fafc}
+.section-dark{background:#0a1628;color:#fff}
+.section-heading{font-size:2.2rem;text-align:center;margin-bottom:12px;color:#0a1628}
+.section-dark .section-heading{color:#fff}
+.section-sub{text-align:center;color:#64748b;margin-bottom:48px;font-size:1.05rem;max-width:600px;margin-left:auto;margin-right:auto}
+.section-dark .section-sub{color:rgba(255,255,255,.7)}
+.accent-line{width:60px;height:4px;background:linear-gradient(135deg,#2563eb,#38bdf8);margin:16px auto 24px;border-radius:2px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-text p{margin-bottom:16px;color:#334155}
+.about-img{border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);border-left:4px solid #2563eb;transition:all .3s}
+.service-card:hover{transform:translateY(-8px);box-shadow:0 12px 40px rgba(37,99,235,.15)}
+.service-card img{width:100%;height:200px;object-fit:cover}
+.service-card-body{padding:24px}
+.service-card h3{font-size:1.2rem;margin-bottom:8px;color:#0a1628}
+.service-card p{color:#475569;font-size:.95rem;margin-bottom:12px}
+.btn-link{color:#2563eb;font-weight:700;font-size:.95rem;transition:color .2s}
+.btn-link:hover{color:#1d4ed8}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat-number{font-family:'Oswald',sans-serif;font-size:3.5rem;font-weight:700;color:#38bdf8}
+.stat-label{color:rgba(255,255,255,.8);font-size:1rem;margin-top:4px}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.why-card{padding:32px;border-left:4px solid #2563eb;background:#fff;border-radius:0 12px 12px 0;box-shadow:0 4px 15px rgba(0,0,0,.06);transition:transform .3s}
+.why-card:hover{transform:translateY(-4px)}
+.why-icon{font-size:2rem;margin-bottom:12px;color:#2563eb}
+.why-card h3{font-size:1.1rem;margin-bottom:8px}
+.why-card p{color:#475569;font-size:.95rem}
+.testimonials{background:linear-gradient(rgba(10,22,40,.85),rgba(10,22,40,.9)),url('https://placehold.co/1920x600/0a1628/2563eb?text=REVIEWS') center/cover no-repeat}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial-card{background:#fff;padding:32px;border-radius:12px;border-top:4px solid #2563eb;position:relative}
+.quote-mark{font-size:3rem;color:#2563eb;line-height:1;margin-bottom:8px;font-family:Georgia,serif}
+.review-text{color:#334155;font-size:.95rem;font-style:italic;margin-bottom:16px}
+.reviewer strong{display:block;color:#0a1628}
+.stars{color:#f59e0b;font-size:1.1rem;letter-spacing:2px}
+.areas-wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+.area-pill{padding:10px 24px;border:2px solid #2563eb;border-radius:50px;color:#2563eb;font-weight:600;font-size:.95rem;transition:all .25s;cursor:default}
+.area-pill:hover{background:#2563eb;color:#fff}
+.faq-item{border-left:4px solid #2563eb;margin-bottom:12px;border-radius:0 8px 8px 0;overflow:hidden}
+.faq-item summary{padding:18px 24px;font-family:'Oswald',sans-serif;font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;background:#f8fafc;transition:background .2s}
+.faq-item summary:hover{background:#dbeafe}
+.faq-item[open] summary{background:#2563eb;color:#fff}
+.faq-item[open] .faq-icon{transform:rotate(45deg)}
+.faq-icon{font-size:1.4rem;transition:transform .3s;font-weight:400}
+.faq-answer{padding:20px 24px}
+.faq-answer p{color:#475569}
+.cta-banner{background:#0a1628;padding:60px 24px;text-align:center}
+.cta-banner h2{color:#fff;font-size:2rem;margin-bottom:16px}
+.cta-banner p{color:rgba(255,255,255,.7);margin-bottom:24px}
+.final-cta{text-align:center}
+.final-cta .btn{margin:8px}
+.footer{background:#0a1628;padding:60px 0 0;color:rgba(255,255,255,.8)}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.footer h4{color:#fff;font-family:'Oswald',sans-serif;font-size:1.1rem;margin-bottom:16px}
+.footer ul{list-style:none}
+.footer li{margin-bottom:8px;font-size:.9rem}
+.footer a{color:rgba(255,255,255,.7);transition:color .2s}
+.footer a:hover{color:#38bdf8}
+.footer-phone{font-size:1.3rem;color:#38bdf8;font-weight:700;display:block;margin-top:12px}
+.footer-bottom{text-align:center;margin-top:40px;padding:24px 0 0;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;color:rgba(255,255,255,.5)}
+.biznify-bar{background:#0a1628;padding:40px 0 32px;border-top:none;margin-top:0}
+.biznify-inner{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.biznify-logo{height:60px;width:auto;margin-bottom:4px}
+.biznify-credit{color:#fff;font-weight:700;font-size:1rem;transition:color .2s}
+.biznify-credit:hover{color:#38bdf8}
+.biznify-copy{color:rgba(255,255,255,.5);font-size:.9rem;font-weight:700}
+.biznify-desc{color:rgba(255,255,255,.6);font-size:1rem;max-width:500px;line-height:1.6;margin:0 auto}
+.biznify-cta{margin-top:8px;padding:20px 48px;font-size:1.15rem}
+.sticky-bar{position:fixed;bottom:0;left:0;width:100%;background:#0a1628;display:flex;justify-content:center;gap:12px;padding:12px 24px;z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
+.sticky-bar .btn{padding:14px 32px;font-size:1rem}
+.sticky-bar{gap:8px;padding:10px 16px}
+@media(max-width:480px){.sticky-bar .btn{padding:12px 20px;font-size:.85rem;letter-spacing:0}}
+.animate-on-scroll{opacity:0;transform:translateY(30px);transition:opacity .6s ease-out,transform .6s ease-out}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+@media(max-width:992px){
+  .services-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:2.8rem}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .services-grid,.testimonials-grid,.why-grid,.stats-grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .section{padding:60px 0}
+  .trust-items{grid-template-columns:repeat(2,1fr);gap:12px}
+  .footer-grid{grid-template-columns:1fr}
+  .section-heading{font-size:1.8rem}
+}
+@media(max-width:480px){
+  .hero{min-height:100svh;padding:100px 20px 60px}
+  .hero h1{font-size:2rem;letter-spacing:0;margin-bottom:12px}
+  .hero .tagline{font-size:1rem;letter-spacing:1px;margin-bottom:6px}
+  .hero .subtitle{font-size:1rem;margin-bottom:24px}
+  .hero-btns{flex-direction:column;align-items:stretch;gap:12px;width:100%;max-width:320px;margin:0 auto}
+  .hero-btns .btn{text-align:center;padding:16px 24px;font-size:1rem;width:100%}
+  .btn{padding:14px 28px;font-size:.95rem}
+  .scroll-arrow{bottom:20px;font-size:1.5rem}
+}
+</style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>My Business</h1>
-            <p class="tagline">Professional Home Services You Can Trust in Your City, ST</p>
-            <div class="hero-buttons">
-                <a href="tel:+18475053640" class="btn btn-large">Call Now: (847) 505-3640</a>
-                <a href="tel:+18475053640" class="btn btn-large btn-outline">Get Free Estimate</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
-        <div class="container">
-            <div class="trust-items">
-                <div class="trust-item">
-                    <span>🛡️</span>
-                    <span>Licensed & Insured</span>
-                </div>
-                <div class="trust-item">
-                    <span>💰</span>
-                    <span>Free Estimates</span>
-                </div>
-                <div class="trust-item">
-                    <span>⭐</span>
-                    <span>5-Star Rated</span>
-                </div>
-                <div class="trust-item">
-                    <span>🏠</span>
-                    <span>Locally Owned</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <h2>Your Local Home Services Experts in Your City</h2>
-                <p>For over a decade, My Business has been the trusted choice for homeowners throughout Your City and surrounding areas. Our team of licensed professionals brings expertise, reliability, and quality craftsmanship to every project.</p>
-                <p>From emergency repairs to planned installations, we handle every job with the same commitment to excellence. We understand that your home is your biggest investment, which is why we use only premium materials and proven techniques to ensure lasting results.</p>
-                <p>When you choose My Business, you're choosing a local company that stands behind our work with comprehensive warranties and 24/7 emergency service. Your satisfaction is our guarantee.</p>
-                <a href="tel:+18475053640" class="btn btn-large">Schedule Your Service Today</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2>Our Home Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>General Repair</h3>
-                    <p>Fast, reliable repairs for all your home maintenance needs. Our skilled technicians diagnose problems quickly and provide lasting solutions.</p>
-                    <a href="tel:+18475053640" class="btn">Get Repair Quote</a>
-                </div>
-                <div class="service-card">
-                    <h3>Professional Installation</h3>
-                    <p>Expert installation services for fixtures, appliances, and home systems. We ensure proper setup and optimal performance from day one.</p>
-                    <a href="tel:+18475053640" class="btn">Schedule Install</a>
-                </div>
-                <div class="service-card">
-                    <h3>Preventive Maintenance</h3>
-                    <p>Keep your home running smoothly with our comprehensive maintenance programs. Regular service prevents costly breakdowns and extends equipment life.</p>
-                    <a href="tel:+18475053640" class="btn">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <h3>Home Inspection</h3>
-                    <p>Thorough inspections to identify potential issues before they become major problems. Perfect for new homeowners or annual checkups.</p>
-                    <a href="tel:+18475053640" class="btn">Book Inspection</a>
-                </div>
-                <div class="service-card">
-                    <h3>Emergency Service</h3>
-                    <p>Available 24/7 for urgent repairs and emergency situations. When disaster strikes, our rapid response team is ready to help.</p>
-                    <a href="tel:+18475053640" class="btn">Emergency Call</a>
-                </div>
-                <div class="service-card">
-                    <h3>Expert Consultation</h3>
-                    <p>Professional advice and recommendations for your home improvement projects. Get expert guidance to make informed decisions.</p>
-                    <a href="tel:+18475053640" class="btn">Get Consultation</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <h2>Why Choose My Business?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">🏆</div>
-                    <h3>Proven Experience</h3>
-                    <p>With years of experience serving Your City homeowners, we've encountered every type of home service challenge. Our expertise means efficient solutions and quality results you can count on.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Superior Quality</h3>
-                    <p>We never cut corners on materials or workmanship. Every project receives our full attention to detail, premium components, and rigorous quality control to ensure lasting performance.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📍</div>
-                    <h3>Local Knowledge</h3>
-                    <p>As Your City locals, we understand the unique challenges homes face in our area. From weather patterns to building codes, our local expertise ensures appropriate solutions for your property.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✅</div>
-                    <h3>Satisfaction Guarantee</h3>
-                    <p>Your complete satisfaction is our commitment. We stand behind every job with comprehensive warranties and won't consider the work finished until you're 100% happy with the results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Areas -->
-    <section class="service-areas">
-        <div class="container">
-            <h2>Areas We Serve</h2>
-            <p>My Business proudly serves homeowners throughout Your City and surrounding communities. No matter where you're located in our service area, our team is ready to help.</p>
-            <div class="areas-list">
-                <a href="tel:+18475053640" class="area-tag">Your City</a>
-                <a href="tel:+18475053640" class="area-tag">Downtown Your City</a>
-                <a href="tel:+18475053640" class="area-tag">North Your City</a>
-                <a href="tel:+18475053640" class="area-tag">South Your City</a>
-                <a href="tel:+18475053640" class="area-tag">East Your City</a>
-                <a href="tel:+18475053640" class="area-tag">West Your City</a>
-                <a href="tel:+18475053640" class="area-tag">Your City Heights</a>
-                <a href="tel:+18475053640" class="area-tag">Your City Hills</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Call Us Today</h3>
-                    <p>Contact our friendly team to discuss your home service needs. We'll ask a few questions to understand your situation and schedule a convenient time for your free estimate.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Free Estimate</h3>
-                    <p>Our licensed professional will visit your home to assess the work needed. We'll provide a detailed, no-obligation estimate and answer all your questions about the project.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Expert Service</h3>
-                    <p>Once you approve the estimate, we'll schedule your service at your convenience. Our skilled technicians will complete the work efficiently and clean up thoroughly when finished.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <details>
-                    <summary>How much do your services cost?</summary>
-                    <div class="faq-content">
-                        <p>Service costs vary depending on the complexity and scope of work needed. We provide detailed, upfront estimates with no hidden fees. All estimates are completely free with no obligation to proceed.</p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>How quickly can you start my project?</summary>
-                    <div class="faq-content">
-                        <p>For most projects, we can schedule service within 2-3 days of your call. Emergency repairs receive same-day or next-day priority scheduling. We always work around your schedule for maximum convenience.</p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>Are you licensed and insured?</summary>
-                    <div class="faq-content">
-                        <p>Yes, My Business is fully licensed, bonded, and insured for your protection. We maintain comprehensive liability insurance and workers' compensation coverage. All our technicians are licensed professionals with ongoing training.</p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>Do you offer any warranties on your work?</summary>
-                    <div class="faq-content">
-                        <p>Absolutely. All our work comes with comprehensive warranties covering both labor and materials. Warranty periods vary by service type, but we stand behind every job and will return to address any issues at no charge.</p>
-                    </div>
-                </details>
-                
-                <details>
-                    <summary>Do you provide emergency services?</summary>
-                    <div class="faq-content">
-                        <p>Yes, we offer 24/7 emergency service for urgent situations that can't wait. Emergency calls receive priority response, typically within 1-2 hours. Emergency service rates may apply for after-hours calls.</p>
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Don't wait for small problems to become major headaches. Contact My Business today for fast, professional home services you can trust.</p>
-            <div class="final-cta-buttons">
-                <a href="tel:+18475053640" class="btn btn-large">Call (847) 505-3640</a>
-                <a href="tel:+18475053640" class="btn btn-large">Free Estimate</a>
-                <a href="tel:+18475053640" class="btn btn-large">Schedule Service</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>My Business</h3>
-                    <p>Your City, ST</p>
-                    <p><a href="tel:+18475053640">(847) 505-3640</a></p>
-                    <p>Professional home services you can trust</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Our Services</h3>
-                    <a href="tel:+18475053640">General Repair</a>
-                    <a href="tel:+18475053640">Installation</a>
-                    <a href="tel:+18475053640">Maintenance</a>
-                    <a href="tel:+18475053640">Inspection</a>
-                    <a href="tel:+18475053640">Emergency Service</a>
-                    <a href="tel:+18475053640">Consultation</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Service Areas</h3>
-                    <a href="tel:+18475053640">Your City</a>
-                    <a href="tel:+18475053640">Downtown Your City</a>
-                    <a href="tel:+18475053640">North Your City</a>
-                    <a href="tel:+18475053640">South Your City</a>
-                    <a href="tel:+18475053640">Surrounding Areas</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 My Business. All rights reserved. Licensed, Bonded & Insured.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Sticky Bottom Bar -->
-    <div class="sticky-bottom">
-        <div class="sticky-buttons">
-            <a href="tel:+18475053640" class="btn">📞 Call Now</a>
-            <a href="tel:+18475053640" class="btn">💰 Free Quote</a>
-        </div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">My Business</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <div class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
+      <span></span><span></span><span></span>
     </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="nav-cta">Get a Quote</a>
+  <a href="#services" onclick="this.parentElement.classList.remove('open')">Services</a>
+  <a href="#about" onclick="this.parentElement.classList.remove('open')">About</a>
+  <a href="#areas" onclick="this.parentElement.classList.remove('open')">Areas</a>
+  <a href="#reviews" onclick="this.parentElement.classList.remove('open')">Reviews</a>
+  <a href="#faq" onclick="this.parentElement.classList.remove('open')">FAQ</a>
+</div>
+
+<section class="hero">
+  <div>
+    <div class="tagline">Mobile's Premier Construction Experts Since Day One</div>
+    <h1>My Business</h1>
+    <p class="subtitle">Your project deserves skilled craftsmen who deliver on time and on budget. Call now for your free estimate and experience the difference quality construction makes.</p>
+    <div class="hero-btns">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Get a Free Quote</a>
+      <a href="tel:2517673750" class="btn btn-outline">Call (251) 767-3750</a>
+    </div>
+  </div>
+  <div class="scroll-arrow">&#8595;</div>
+</section>
+
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><span>&#10004;</span>Licensed &amp; Insured</div>
+      <div class="trust-item"><span>&#9733;</span>500+ Projects</div>
+      <div class="trust-item"><span>&#9733;</span>5-Star Rated</div>
+      <div class="trust-item"><span>&#9742;</span>Free Estimates</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Built on Excellence, Trusted in Mobile</h2>
+    <div class="accent-line"></div>
+    <div class="about-grid">
+      <div class="about-text animate-on-scroll">
+        <p>My Business has been Mobile, Alabama's trusted construction partner for over 15 years, transforming homes and commercial properties throughout the Gulf Coast region. Our team of licensed professionals brings decades of combined experience to every project, from small repairs to complete renovations. We understand Mobile's unique climate challenges and building requirements, ensuring every job meets local codes and exceeds expectations. Our commitment to quality craftsmanship, transparent communication, and on-time completion has earned us a reputation as Mobile's most reliable construction company. Whether you're dealing with storm damage, planning a renovation, or need emergency repairs, we deliver solutions that stand the test of time and Alabama's demanding weather conditions.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary" style="margin-top:24px">Get Your Free Estimate</a>
+      </div>
+      <div class="about-img animate-on-scroll">
+        <img src="https://placehold.co/800x600/0a1628/2563eb?text=ABOUT+US" alt="My Business team" width="800" height="600" loading="lazy" onerror="this.src='https://placehold.co/800x600/0a1628/2563eb?text=My%20Business'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>This Is Your Website. Ready to Go Live?</h2>
+  <p>Everything you see here is built for your business. Claim your site now and start getting leads today.</p>
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Claim Your Site Now</a>
+</section>
+
+<section class="section section-light" id="services">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Our Services</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub animate-on-scroll">Professional Construction company solutions for every need in Mobile and beyond.</p>
+    <div class="services-grid">
+    <div class="service-card animate-on-scroll" style="animation-delay:0ms">
+      <img src="https://placehold.co/600x400/dbeafe/2563eb?text=Service+1" alt="Custom Construction Solutions" width="600" height="400" loading="lazy" onerror="this.src='https://placehold.co/600x400/dbeafe/2563eb?text=Custom%20Construction%20Solutions'">
+      <div class="service-card-body">
+        <h3>Custom Construction Solutions</h3>
+        <p>From ground-up builds to major renovations, we handle complex construction projects with precision and expertise. Our team manages every detail from permits to final inspection, ensuring your vision becomes reality.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn-link">Get a Free Quote &rarr;</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll" style="animation-delay:100ms">
+      <img src="https://placehold.co/600x400/dbeafe/2563eb?text=Service+2" alt="General Construction Services" width="600" height="400" loading="lazy" onerror="this.src='https://placehold.co/600x400/dbeafe/2563eb?text=General%20Construction%20Services'">
+      <div class="service-card-body">
+        <h3>General Construction Services</h3>
+        <p>Complete construction solutions for residential and commercial properties including framing, roofing, siding, and structural work. We tackle projects of all sizes with the same commitment to quality and customer satisfaction.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn-link">Get a Free Quote &rarr;</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll" style="animation-delay:200ms">
+      <img src="https://placehold.co/600x400/dbeafe/2563eb?text=Service+3" alt="Professional Construction Repair" width="600" height="400" loading="lazy" onerror="this.src='https://placehold.co/600x400/dbeafe/2563eb?text=Professional%20Construction%20Repair'">
+      <div class="service-card-body">
+        <h3>Professional Construction Repair</h3>
+        <p>Expert repair services for structural damage, foundation issues, and storm-related construction problems. Our certified technicians diagnose problems quickly and provide lasting solutions that protect your investment.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn-link">Get a Free Quote &rarr;</a>
+      </div>
+    </div></div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary animate-on-scroll">Get a Free Quote on Any Service</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="animate-on-scroll"><div class="stat-number" data-target="500">0</div><div class="stat-label">Projects Completed</div></div>
+      <div class="animate-on-scroll" style="animation-delay:100ms"><div class="stat-number" data-target="15">0</div><div class="stat-label">Years Experience</div></div>
+      <div class="animate-on-scroll" style="animation-delay:200ms"><div class="stat-number" data-target="100">0</div><div class="stat-label">% Satisfaction</div></div>
+      <div class="animate-on-scroll" style="animation-delay:300ms"><div class="stat-number" data-target="24">0</div><div class="stat-label">/7 Availability</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Why Mobile Trusts My Business</h2>
+    <div class="accent-line"></div>
+    <div class="why-grid">
+    <div class="why-card animate-on-scroll" style="animation-delay:0ms">
+      <div class="why-icon">&#9733;</div>
+      <h3>15+ Years Mobile Experience</h3>
+      <p>Deep local knowledge of Mobile's building codes, climate challenges, and permit requirements ensures your project is done right the first time.</p>
+    </div>
+    <div class="why-card animate-on-scroll" style="animation-delay:100ms">
+      <div class="why-icon">&#9883;</div>
+      <h3>Uncompromising Quality Standards</h3>
+      <p>Every project undergoes rigorous quality control with premium materials and proven construction techniques that deliver lasting results.</p>
+    </div>
+    <div class="why-card animate-on-scroll" style="animation-delay:200ms">
+      <div class="why-icon">&#9873;</div>
+      <h3>True Local Construction Experts</h3>
+      <p>Born and raised in Mobile, we understand the unique construction needs of Gulf Coast properties and weather-related challenges.</p>
+    </div>
+    <div class="why-card animate-on-scroll" style="animation-delay:300ms">
+      <div class="why-icon">&#10004;</div>
+      <h3>100% Satisfaction Guarantee</h3>
+      <p>We stand behind every project with comprehensive warranties and won't consider the job complete until you're completely satisfied.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Your Site Is Ready. Let&rsquo;s Get It Live.</h2>
+  <p>Your custom website is built. Claim it now and we&rsquo;ll get you set up with your own domain, hosting, and everything you need.</p>
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Claim Your Site &amp; Go Live</a>
+</section>
+
+<section class="section testimonials" id="reviews">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll" style="color:#fff">What Mobile Homeowners Say</h2>
+    <div class="accent-line"></div>
+    <div class="testimonials-grid">
+    <div class="testimonial-card animate-on-scroll" style="animation-delay:0ms">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="review-text">My Business completely transformed our storm-damaged home in Mobile. Their professional repair work was flawless and completed ahead of schedule. The quality exceeded our expectations and the pricing was very fair.</p>
+      <div class="reviewer">
+        <strong>Robert Chen</strong>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div>
+    <div class="testimonial-card animate-on-scroll" style="animation-delay:100ms">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="review-text">Outstanding general construction services for our commercial building renovation. The crew was professional, clean, and communicated every step of the process. Highly recommend My Business to anyone in Mobile needing quality construction work.</p>
+      <div class="reviewer">
+        <strong>Maria Rodriguez</strong>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div>
+    <div class="testimonial-card animate-on-scroll" style="animation-delay:200ms">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="review-text">Called My Business for emergency construction repairs after Hurricane damage. They responded immediately and had our structure secure within hours. Their expertise and quick response saved us thousands in additional damage.</p>
+      <div class="reviewer">
+        <strong>James Walker</strong>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section class="section section-light" id="areas">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Proudly Serving Mobile &amp; Surrounding Areas</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub animate-on-scroll">My Business is proud to offer professional Construction company services across Mobile and neighboring communities.</p>
+    <div class="areas-wrap animate-on-scroll"><span class="area-pill">null</span></div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary animate-on-scroll">Not Sure If We Cover Your Area? Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container" style="max-width:800px">
+    <h2 class="section-heading animate-on-scroll">Frequently Asked Questions</h2>
+    <div class="accent-line"></div>
+    
+    <details class="faq-item animate-on-scroll">
+      <summary>How quickly can you start my construction project?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Most projects can begin within 1-2 weeks of contract signing, depending on permit requirements and material availability. Emergency repairs often start within 24-48 hours.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>Do you handle permits and inspections?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Absolutely. We manage all necessary permits, inspections, and code compliance for your construction project. Our team knows Mobile's building requirements inside and out.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>What types of construction projects do you specialize in?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>We handle residential and commercial construction including new builds, renovations, additions, structural repairs, and storm damage restoration. No project is too big or small for our experienced team.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>Are you licensed and insured in Alabama?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Yes, we maintain full Alabama contractor licensing, general liability insurance, and workers compensation coverage. All credentials are current and available for review upon request.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>Do you provide free construction estimates?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>We offer complimentary detailed estimates for all construction projects. Our estimates include material costs, labor, timeline, and project specifications with no hidden fees or surprises.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="section section-dark final-cta">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll" style="color:#fff">Your Construction Project Can't Wait - Call Now!</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub animate-on-scroll">Don't let construction problems get worse or miss out on perfect building weather. Our schedule fills up fast, so call (251) 767-3750 today for your free estimate and priority scheduling.</p>
+    <div class="animate-on-scroll">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Get Free Quote</a>
+      <a href="tel:2517673750" class="btn btn-primary">Call (251) 767-3750</a>
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-outline">Book Consultation</a>
+    </div>
+    <div style="margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.15)" class="animate-on-scroll">
+      <p style="color:rgba(255,255,255,.6);font-size:.95rem;margin-bottom:12px">Ready to make this site yours?</p>
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-outline" style="border-color:#38bdf8;color:#38bdf8">Claim Your Site Now &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>My Business</h4>
+        <p>Mobile, Alabama</p>
+        <a href="tel:2517673750" class="footer-phone">(251) 767-3750</a>
+        <p style="margin-top:12px;font-size:.85rem">Licensed &amp; Insured<br>Locally Owned &amp; Operated</p>
+      </div>
+      <div><h4>Services</h4><ul><li>Custom Construction Solutions</li><li>General Construction Services</li><li>Professional Construction Repair</li></ul></div>
+      <div><h4>Service Areas</h4><ul><li>null</li></ul></div>
+      <div>
+        <h4>Get Started</h4>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary" style="display:block;text-align:center;margin-bottom:12px">Get a Quote</a>
+        <a href="tel:2517673750" class="btn btn-outline" style="display:block;text-align:center;border-color:#38bdf8;color:#38bdf8">Call Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 My Business. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="biznify-bar">
+  <div class="container">
+    <div class="biznify-inner">
+      <a href="https://biznifysolutions.com/" target="_blank"><img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlQv88jBaatY0zenjfDK/media/044d3ad7-6368-429a-b003-9e39b1f8db33.png" alt="Biznify Solutions" class="biznify-logo"></a>
+      <a href="https://biznifysolutions.com/" target="_blank" class="biznify-credit">Designed &amp; Developed by Biznify Solutions</a>
+      <p class="biznify-desc">This website was custom-built for your business by Biznify Solutions. Ready to claim it, get your own domain, and start generating leads?</p>
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary biznify-cta">Claim Your Site &amp; Go Live</a>
+      <span class="biznify-copy">&copy; Copyright 2026 Biznify Solutions</span>
+    </div>
+  </div>
+</div>
+
+<div class="sticky-bar">
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">&#9993; Get a Quote</a>
+  <a href="tel:2517673750" class="btn btn-outline" style="border-color:#38bdf8;color:#38bdf8">&#9742; Call Now</a>
+</div>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.animate-on-scroll').forEach(el=>obs.observe(el));
+const counterObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.target);let current=0;const step=Math.max(1,Math.floor(target/60));const timer=setInterval(()=>{current+=step;if(current>=target){current=target;clearInterval(timer)}el.textContent=current+(target>=100&&target<1000?'%':'+')},25);counterObs.unobserve(el)}})},{threshold:0.5});
+document.querySelectorAll('.stat-number').forEach(el=>counterObs.observe(el));
+</script>
 </body>
 </html>
