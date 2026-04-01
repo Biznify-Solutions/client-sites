@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Junk - Professional Junk Removal Buffalo Grove | (847) 505-3640</title>
+    <meta name="description" content="Professional junk removal services in Buffalo Grove. Fast, reliable, and affordable. Licensed & insured. Call (847) 505-3640 for free estimate today!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-dark: #0a1628;
+            --accent-blue: #2563eb;
+            --accent-hover: #1d4ed8;
+            --accent-light: #dbeafe;
+            --sky-blue: #38bdf8;
+            --gradient: linear-gradient(135deg, #2563eb, #38bdf8);
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-dark);
+            padding-bottom: 80px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar.scrolled .logo {
+            color: var(--primary-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled .nav-links a {
+            color: var(--primary-dark);
+        }
+
+        .nav-links a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--accent-blue);
+        }
+
+        .nav-cta {
+            background: var(--gradient);
+            color: var(--white) !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Menu */
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .navbar.scrolled .mobile-toggle span {
+            background: var(--primary-dark);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            z-index: 10000;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .mobile-menu a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(10, 22, 40, 0.75), rgba(10, 22, 40, 0.75)), url('https://placehold.co/1920x1080/0a1628/2563eb?text=JUNK%20REMOVAL%20EXPERTS') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: 2px solid var(--white);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .scroll-arrow {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--gradient);
+            padding: 1.5rem 0;
+            color: var(--white);
+        }
+
+        .trust-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .trust-item {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .about-content h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--accent-blue);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .service-card-content {
+            padding: 2rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .service-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 5rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--sky-blue);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--accent-blue);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--accent-light);
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: serif;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* Before After */
+        .before-after-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .before-after-item {
+            text-align: center;
+        }
+
+        .before-after-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .before-after-images img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .image-label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            border: 2px solid var(--accent-light);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        .feature-item h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        /* Service Areas */
+        .service-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .area-pill {
+            background: var(--white);
+            border: 2px solid var(--accent-blue);
+            color: var(--accent-blue);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .area-pill:hover {
+            background: var(--accent-blue);
+            color: var(--white);
+        }
+
+        /* How It Works */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        .process-step h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+
+        .faq-item {
+            border-left: 4px solid var(--accent-blue);
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: var(--white);
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--accent-light);
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item[open] .faq-question::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* CTA Banners */
+        .cta-banner {
+            background: var(--gradient);
+            padding: 4rem 0;
+            text-align: center;
+            color: var(--white);
+            margin: 5rem 0;
+        }
+
+        .cta-banner h2 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Sticky Bottom Bar */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary-dark);
+            padding: 1rem;
+            z-index: 9999;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta-content {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sticky-cta .btn-primary,
+        .sticky-cta .btn-secondary {
+            flex: 1;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--sky-blue);
+        }
+
+        .footer-section a {
+            color: #94a3b8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--sky-blue);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .trust-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sticky-cta-content {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .navbar {
+                padding: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .trust-items {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .before-after-images {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Wonderful Junk</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#areas">Areas</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:8475053640" class="nav-cta">Call Now</a></li>
+            </ul>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="tel:8475053640" class="nav-cta" style="margin-bottom: 2rem;">Call (847) 505-3640</a>
+        <a href="#services" onclick="toggleMobileMenu()">Services</a>
+        <a href="#about" onclick="toggleMobileMenu()">About</a>
+        <a href="#areas" onclick="toggleMobileMenu()">Areas</a>
+        <a href="#reviews" onclick="toggleMobileMenu()">Reviews</a>
+        <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content animate-on-scroll">
+            <h1>WONDERFUL JUNK</h1>
+            <p>Buffalo Grove's #1 Junk Removal Experts - Fast, Reliable, and Affordable Service You Can Trust</p>
+            <div class="hero-buttons">
+                <a href="tel:8475053640" class="btn-primary">CALL NOW - (847) 505-3640</a>
+                <a href="tel:8475053640" class="btn-secondary">GET FREE ESTIMATE</a>
+            </div>
+        </div>
+        <div class="scroll-arrow">↓</div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-items">
+            <div class="trust-item">Licensed & Insured</div>
+            <div class="trust-item">500+ Projects</div>
+            <div class="trust-item">5-Star Rated</div>
+            <div class="trust-item">Free Estimates</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content animate-on-scroll">
+                    <h3>Buffalo Grove's Most Trusted Junk Removal Company</h3>
+                    <p>For over 15 years, Wonderful Junk has been helping Buffalo Grove residents and businesses reclaim their space. We handle everything from furniture removal to estate cleanouts with professionalism and care.</p>
+                    <p>Our team is fully licensed, insured, and committed to eco-friendly disposal practices. We donate what we can and recycle the rest, keeping your unwanted items out of landfills.</p>
+                    <p>No job is too big or small. From single items to complete property cleanouts, we've got you covered with upfront pricing and same-day service.</p>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <img src="https://placehold.co/800x600/0a1628/2563eb?text=WONDERFUL%20JUNK" alt="Wonderful Junk Team" width="800" height="600">
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="tel:8475053640" class="btn-primary">Get Your Free Quote Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Junk Removal Services</h2>
+            <p class="section-subtitle animate-on-scroll">Complete junk removal solutions for your home or business in Buffalo Grove</p>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <img src="https://placehold.co/600x400/dbeafe/2563eb?text=FURNITURE%20REMOVAL" alt="Furniture Removal" width="600" height="400">
+                    <div class="service-card-content">
+                        <h3>Furniture Removal</h3>
+                        <p>Old couches, mattresses, dressers, and more. We safely remove and dispose of all types of furniture from your home or office.</p>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <img src="https://placehold.co/600x400/dbeafe/2563eb?text=APPLIANCE%20REMOVAL" alt="Appliance Removal" width="600" height="400">
+                    <div class="service-card-content">
+                        <h3>Appliance Removal</h3>
+                        <p>Refrigerators, washers, dryers, and other appliances. We handle proper disposal and recycling of all household appliances.</p>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <img src="https://placehold.co/600x400/dbeafe/2563eb?text=ESTATE%20CLEANOUT" alt="Estate Cleanout" width="600" height="400">
+                    <div class="service-card-content">
+                        <h3>Estate & Property Cleanouts</h3>
+                        <p>Complete property cleanouts for estates, foreclosures, and rental properties. We handle everything with respect and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner 1 -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="animate-on-scroll">Ready to Reclaim Your Space?</h2>
+            <p class="animate-on-scroll">Call now for same-day service and upfront pricing!</p>
+            <a href="tel:8475053640" class="btn-secondary">Call (847) 505-3640 Now</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="500">0</span>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="15">0</span>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="100">0</span>
+                    <div class="stat-label">% Satisfaction Rate</div>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="24">0</span>
+                    <div class="stat-label">Hour Availability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">What Buffalo Grove Says About Us</h2>
+            <p class="section-subtitle animate-on-scroll">Real reviews from satisfied customers</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Wonderful Junk removed all the furniture from my Buffalo Grove home before my move. They were professional, fast, and reasonably priced. Highly recommend!</p>
+                    <div class="testimonial-author">- Sarah M., Buffalo Grove</div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Needed appliance removal service quickly. These guys showed up same day and took care of everything. Great junk removal company in Buffalo Grove!</p>
+                    <div class="testimonial-author">- Mike R., Buffalo Grove</div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Complete estate cleanout after my father passed. The team was respectful and thorough. Made a difficult time much easier. Thank you Wonderful Junk!</p>
+                    <div class="testimonial-author">- Jennifer L., Buffalo Grove</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">See The Difference We Make</h2>
+            <p class="section-subtitle animate-on-scroll">Real transformations from our Buffalo Grove projects</p>
+            
+            <div class="before-after-grid">
+                <div class="before-after-item animate-on-scroll">
+                    <div class="before-after-images">
+                        <div>
+                            <div class="image-label">BEFORE</div>
+                            <img src="https://placehold.co/500x350/1e293b/64748b?text=BEFORE" alt="Before junk removal" width="500" height="350">
+                        </div>
+                        <div>
+                            <div class="image-label">AFTER</div>
+                            <img src="https://placehold.co/500x350/dbeafe/2563eb?text=AFTER" alt="After junk removal" width="500" height="350">
+                        </div>
+                    </div>
+                    <h3>Basement Cleanout</h3>
+                    <p>Complete removal of old furniture and appliances</p>
+                </div>
+                <div class="before-after-item animate-on-scroll">
+                    <div class="before-after-images">
+                        <div>
+                            <div class="image-label">BEFORE</div>
+                            <img src="https://placehold.co/500x350/1e293b/64748b?text=BEFORE" alt="Before junk removal" width="500" height="350">
+                        </div>
+                        <div>
+                            <div class="image-label">AFTER</div>
+                            <img src="https://placehold.co/500x350/dbeafe/2563eb?text=AFTER" alt="After junk removal" width="500" height="350">
+                        </div>
+                    </div>
+                    <h3>Garage Clearance</h3>
+                    <p>Years of accumulated items removed efficiently</p>
+                </div>
+                <div class="before-after-item animate-on-scroll">
+                    <div class="before-after-images">
+                        <div>
+                            <div class="image-label">BEFORE</div>
+                            <img src="https://placehold.co/500x350/1e293b/64748b?text=BEFORE" alt="Before junk removal" width="500" height="350">
+                        </div>
+                        <div>
+                            <div class="image-label">AFTER</div>
+                            <img src="https://placehold.co/500x350/dbeafe/2563eb?text=AFTER" alt="After junk removal" width="500" height="350">
+                        </div>
+                    </div>
+                    <h3>Office Cleanout</h3>
+                    <p>Professional commercial junk removal service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Why Buffalo Grove Chooses Wonderful Junk</h2>
+            <p class="section-subtitle animate-on-scroll">The clear choice for professional junk removal</p>
+            
+            <div class="features-grid">
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Same-Day Service</h3>
+                    <p>Need it gone today? We offer same-day pickup for urgent junk removal needs in Buffalo Grove.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">💰</div>
+                    <h3>Upfront Pricing</h3>
+                    <p>No hidden fees or surprises. You'll know exactly what you're paying before we start the job.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Licensed & Insured</h3>
+                    <p>Full licensing and insurance coverage gives you peace of mind with every junk removal project.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">♻️</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>We donate and recycle whenever possible, keeping your unwanted items out of landfills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="section" id="areas">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Service Areas</h2>
+            <p class="section-subtitle animate-on-scroll">Proudly serving Buffalo Grove and surrounding communities</p>
+            
+            <div class="service-areas">
+                <div class="area-pill animate-on-scroll">Buffalo Grove</div>
+                <div class="area-pill animate-on-scroll">Wheeling</div>
+                <div class="area-pill animate-on-scroll">Arlington Heights</div>
+                <div class="area-pill animate-on-scroll">Palatine</div>
+                <div class="area-pill animate-on-scroll">Vernon Hills</div>
+                <div class="area-pill animate-on-scroll">Lincolnshire</div>
+                <div class="area-pill animate-on-scroll">Deerfield</div>
+                <div class="area-pill animate-on-scroll">Northbrook</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner 2 -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="animate-on-scroll">Don't Wait - Get That Junk Removed Today!</h2>
+            <p class="animate-on-scroll">Free estimates • Same-day service • Upfront pricing</p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="tel:8475053640" class="btn-secondary">Call (847) 505-3640</a>
+                <a href="tel:8475053640" class="btn-secondary">Text For Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">How Our Junk Removal Works</h2>
+            <p class="section-subtitle animate-on-scroll">Simple, fast, and hassle-free process</p>
+            
+            <div class="process-steps">
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3>Call or Text</h3>
+                    <p>Contact us at (847) 505-3640 for your free estimate. We'll ask about your junk removal needs and schedule a convenient time.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3>We Show Up</h3>
+                    <p>Our professional team arrives on time with all the equipment needed to safely remove your unwanted items.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3>Junk Gone!</h3>
+                    <p>We do all the heavy lifting, clean up after ourselves, and haul everything away. You just point and it's gone!</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="tel:8475053640" class="btn-primary">Start Your Junk Removal Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Frequently Asked Questions</h2>
+            <p class="section-subtitle animate-on-scroll">Everything you need to know about our Buffalo Grove junk removal service</p>
+            
+            <div class="faq-container">
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">How much does junk removal cost in Buffalo Grove?</summary>
+                    <div class="faq-answer">
+                        <p>Our pricing is based on volume and type of items. We offer upfront pricing with no hidden fees. Most residential jobs range from $150-$800. Call (847) 505-3640 for your free estimate!</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">Do you offer same-day junk removal service?</summary>
+                    <div class="faq-answer">
+                        <p>Yes! We understand that sometimes you need junk removed immediately. Call us before 2 PM and we can often provide same-day service in Buffalo Grove.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">What items can you remove?</summary>
+                    <div class="faq-answer">
+                        <p>We remove furniture, appliances, electronics, construction debris, yard waste, and most household items. We cannot remove hazardous materials, chemicals, or asbestos.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">Are you licensed and insured?</summary>
+                    <div class="faq-answer">
+                        <p>Absolutely! Wonderful Junk is fully licensed and insured for your protection. We carry comprehensive liability insurance and proper disposal licensing.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">Do you recycle or donate items?</summary>
+                    <div class="faq-answer">
+                        <p>Yes! We're committed to eco-friendly disposal. We donate usable items to local charities and recycle materials whenever possible to keep items out of landfills.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section" style="background: var(--primary-dark); color: var(--white);" id="contact">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title animate-on-scroll" style="color: var(--white);">Ready to Get Started?</h2>
+            <p class="section-subtitle animate-on-scroll" style="color: #94a3b8;">Don't let junk take over your space. Call Buffalo Grove's #1 junk removal company today!</p>
+            
+            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 3rem;">
+                <a href="tel:8475053640" class="btn-primary">Call (847) 505-3640</a>
+                <a href="tel:8475053640" class="btn-secondary">Text For Estimate</a>
+                <a href="tel:8475053640" class="btn-primary">Book Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Wonderful Junk</h3>
+                    <p>Buffalo Grove's premier junk removal service. Licensed, insured, and ready to help you reclaim your space.</p>
+                    <p><strong>Phone:</strong> (847) 505-3640</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">Furniture Removal</a>
+                    <a href="#services">Appliance Removal</a>
+                    <a href="#services">Estate Cleanouts</a>
+                    <a href="#services">Construction Debris</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <a href="#areas">Buffalo Grove</a>
+                    <a href="#areas">Wheeling</a>
+                    <a href="#areas">Arlington Heights</a>
+                    <a href="#areas">Palatine</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="tel:8475053640">Call Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wonderful Junk. All rights reserved. | Licensed & Insured Junk Removal Buffalo Grove</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom CTA -->
+    <div class="sticky-cta">
+        <div class="sticky-cta-content">
+            <a href="tel:8475053640" class="btn-primary">Call (847) 505-3640</a>
+            <a href="tel:8475053640" class="btn-secondary">Free Estimate</a>
+        </div>
+    </div>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Wonderful Junk",
+        "description": "Professional junk removal services in Buffalo Grove. Fast, reliable, and affordable.",
+        "url": "https://www.wonderfuljunk.com",
+        "telephone": "(847) 505-3640",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "Buffalo Grove",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "42.1664",
+            "longitude": "-87.9598"
+        },
+        "areaServed": "Buffalo Grove",
+        "serviceType": "Junk Removal",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 07:00-19:00"
+    }
+    </script>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(function(el, index) {
+                // Add staggered delays for grid children
+                if (el.parentElement.classList.contains('services-grid') || 
+                    el.parentElement.classList.contains('testimonials-grid') ||
+                    el.parentElement.classList.contains('features-grid')) {
+                    el.style.transitionDelay = (index % 3) * 100 + 'ms';
+                }
+                observer.observe(el);
+            });
+        });
+
+        // Stats Counter Animation
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(function(stat) {
+                const target = parseInt(stat.getAttribute('data-count'));
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(function() {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = Math.floor(current) + (target === 100 ? '%' : '+');
+                }, 30);
+            });
+        }
+
+        // Stats animation observer
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const statsSection = document.querySelector('.stats-section');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
