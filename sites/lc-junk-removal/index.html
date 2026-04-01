@@ -1,817 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LC Junk Removal - Professional Home Services in Your City, ST | Licensed & Insured</title>
-    <meta name="description" content="Professional home services in Your City, ST. Licensed, insured, and locally owned. Get free estimates on repair, installation, maintenance, and emergency services. Call (847) 651-3214 today!">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "LC Junk Removal",
-        "description": "Professional home services including repair, installation, maintenance, inspection, emergency service, and consultation",
-        "telephone": "+18476513214",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Your City",
-            "addressRegion": "ST"
-        },
-        "areaServed": "Your City and surrounding areas",
-        "url": "https://lcjunkremoval.com",
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "127"
-        }
-    }
-    </script>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding-bottom: 70px;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            line-height: 1.3;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .section {
-            padding: 60px 0;
-        }
-        
-        .section-alt {
-            background-color: #f8f9fa;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #e74c3c;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .btn:hover {
-            background: #c0392b;
-            transform: translateY(-2px);
-        }
-        
-        .btn-outline {
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-        }
-        
-        .btn-outline:hover {
-            background: white;
-            color: #1a1a2e;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-        
-        .hero-cta {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        /* Trust Bar */
-        .trust-bar {
-            background: #e74c3c;
-            color: white;
-            padding: 20px 0;
-        }
-        
-        .trust-items {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            text-align: center;
-        }
-        
-        .trust-item {
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        .trust-item span {
-            font-size: 20px;
-            margin-right: 8px;
-        }
-        
-        /* About Section */
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #1a1a2e;
-        }
-        
-        .about p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            max-width: 800px;
-        }
-        
-        .about-cta {
-            margin-top: 30px;
-        }
-        
-        /* Services Grid */
-        .services h2 {
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            text-align: center;
-            color: #1a1a2e;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #1a1a2e;
-        }
-        
-        .service-card p {
-            margin-bottom: 20px;
-        }
-        
-        /* Why Choose Us */
-        .why-choose h2 {
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            text-align: center;
-            color: #1a1a2e;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-        }
-        
-        .feature-block {
-            text-align: center;
-        }
-        
-        .feature-block .icon {
-            font-size: 3rem;
-            color: #e74c3c;
-            margin-bottom: 20px;
-        }
-        
-        .feature-block h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: #1a1a2e;
-        }
-        
-        /* Service Areas */
-        .service-areas h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-align: center;
-            color: #1a1a2e;
-        }
-        
-        .areas-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin: 30px 0;
-        }
-        
-        .area-tag {
-            background: #fdecea;
-            color: #e74c3c;
-            padding: 8px 16px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .area-tag:hover {
-            background: #e74c3c;
-            color: white;
-        }
-        
-        /* How It Works */
-        .how-it-works h2 {
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            text-align: center;
-            color: #1a1a2e;
-        }
-        
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        
-        .step {
-            text-align: center;
-            position: relative;
-        }
-        
-        .step-number {
-            background: #e74c3c;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 20px;
-        }
-        
-        .step h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: #1a1a2e;
-        }
-        
-        /* FAQ */
-        .faq h2 {
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            text-align: center;
-            color: #1a1a2e;
-        }
-        
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .faq-item summary {
-            padding: 20px;
-            background: #f8f9fa;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 18px;
-            color: #1a1a2e;
-        }
-        
-        .faq-item p {
-            padding: 20px;
-            background: white;
-        }
-        
-        /* Final CTA */
-        .final-cta {
-            background: #1a1a2e;
-            color: white;
-            text-align: center;
-            padding: 80px 0;
-        }
-        
-        .final-cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .final-cta p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-        
-        .final-cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        /* Footer */
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .footer h3 {
-            margin-bottom: 15px;
-            color: #e74c3c;
-        }
-        
-        .footer ul {
-            list-style: none;
-        }
-        
-        .footer ul li {
-            margin-bottom: 8px;
-        }
-        
-        .footer ul li a {
-            color: #ccc;
-            text-decoration: none;
-        }
-        
-        .footer ul li a:hover {
-            color: #e74c3c;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 20px;
-            text-align: center;
-            color: #999;
-        }
-        
-        /* Sticky Bottom Bar */
-        .sticky-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #1a1a2e;
-            padding: 15px 20px;
-            z-index: 9999;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
-        }
-        
-        .sticky-buttons {
-            display: flex;
-            gap: 15px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        .sticky-buttons .btn {
-            flex: 1;
-            padding: 12px 20px;
-            font-size: 14px;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .trust-items {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-            }
-            
-            .services-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .hero-cta {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                padding: 12px 25px;
-                font-size: 15px;
-            }
-            
-            h2 {
-                font-size: 2rem !important;
-            }
-            
-            .trust-items {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-            
-            .trust-item {
-                font-size: 13px;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .features-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 30px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-            
-            .hero {
-                padding: 60px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .section {
-                padding: 40px 0;
-            }
-            
-            .btn {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-            
-            h2 {
-                font-size: 1.7rem !important;
-            }
-            
-            .final-cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .sticky-buttons {
-                gap: 10px;
-            }
-            
-            .sticky-buttons .btn {
-                font-size: 13px;
-                padding: 10px 15px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lc Junk Removal | junk removal Services in bufallo grove, ST</title>
+<meta name="description" content="Lc Junk Removal provides expert junk removal services in bufallo grove, ST and surrounding areas. Call (847) 651-3214 for a free estimate today!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Lc Junk Removal","telephone":"(847) 651-3214","address":{"@type":"PostalAddress","addressLocality":"bufallo grove","addressRegion":"ST"},"areaServed":[{"@type":"City","name":"buffalo grove iL"}]}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:#0a1628;line-height:1.7;padding-bottom:80px}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;line-height:1.2}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{position:fixed;top:0;left:0;width:100%;z-index:10000;transition:all .3s;padding:16px 0}
+.nav.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.1);padding:10px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
+.nav-logo{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;color:#fff;transition:color .3s}
+.nav.scrolled .nav-logo{color:#0a1628}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.9);font-weight:500;font-size:.95rem;transition:color .3s}
+.nav-links a:hover{color:#38bdf8}
+.nav.scrolled .nav-links a{color:#0a1628}
+.nav.scrolled .nav-links a:hover{color:#2563eb}
+.nav-cta{background:linear-gradient(135deg,#2563eb,#38bdf8);color:#fff!important;padding:10px 24px;border-radius:8px;font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(37,99,235,.4)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:10001}
+.hamburger span{width:28px;height:3px;background:#fff;transition:all .3s;border-radius:2px}
+.nav.scrolled .hamburger span{background:#0a1628}
+.mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,22,40,.98);z-index:10000;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;transition:opacity .3s}
+.mobile-menu.open{display:flex;opacity:1}
+.mobile-menu a{color:#fff;font-family:'Oswald',sans-serif;font-size:1.8rem;font-weight:600}
+.mobile-menu .nav-cta{font-size:1.2rem;padding:16px 40px;margin-top:16px}
+.close-menu{position:absolute;top:24px;right:24px;font-size:2rem;color:#fff;cursor:pointer;background:none;border:none}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(10,22,40,.75),rgba(10,22,40,.85)),url('https://placehold.co/1920x1080/0a1628/2563eb?text=JUNK+REMOVAL') center/cover no-repeat;padding:120px 24px 80px;position:relative}
+.hero h1{font-size:3.5rem;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.3);margin-bottom:16px;letter-spacing:1px}
+.hero .tagline{font-size:1.3rem;color:#38bdf8;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:2px}
+.hero .subtitle{font-size:1.15rem;color:rgba(255,255,255,.85);max-width:600px;margin:0 auto 32px}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:18px 40px;font-family:'Oswald',sans-serif;font-weight:700;font-size:1.1rem;border-radius:8px;transition:all .25s;cursor:pointer;text-transform:uppercase;letter-spacing:1px}
+.btn-primary{background:linear-gradient(135deg,#2563eb,#38bdf8);color:#fff;border:none}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(37,99,235,.4)}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+.btn-outline:hover{background:#fff;color:#0a1628;transform:translateY(-3px)}
+.scroll-arrow{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:#fff;font-size:2rem;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-12px)}}
+.trust-bar{background:linear-gradient(135deg,#2563eb,#38bdf8);padding:20px 0}
+.trust-items{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.trust-item{color:#fff;font-weight:700;font-size:.95rem}
+.trust-item span{display:block;font-size:1.4rem;margin-bottom:4px}
+.section{padding:80px 0}
+.section-light{background:#f8fafc}
+.section-dark{background:#0a1628;color:#fff}
+.section-heading{font-size:2.2rem;text-align:center;margin-bottom:12px;color:#0a1628}
+.section-dark .section-heading{color:#fff}
+.section-sub{text-align:center;color:#64748b;margin-bottom:48px;font-size:1.05rem;max-width:600px;margin-left:auto;margin-right:auto}
+.section-dark .section-sub{color:rgba(255,255,255,.7)}
+.accent-line{width:60px;height:4px;background:linear-gradient(135deg,#2563eb,#38bdf8);margin:16px auto 24px;border-radius:2px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-text p{margin-bottom:16px;color:#334155}
+.about-img{border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);border-left:4px solid #2563eb;transition:all .3s}
+.service-card:hover{transform:translateY(-8px);box-shadow:0 12px 40px rgba(37,99,235,.15)}
+.service-card img{width:100%;height:200px;object-fit:cover}
+.service-card-body{padding:24px}
+.service-card h3{font-size:1.2rem;margin-bottom:8px;color:#0a1628}
+.service-card p{color:#475569;font-size:.95rem;margin-bottom:12px}
+.btn-link{color:#2563eb;font-weight:700;font-size:.95rem;transition:color .2s}
+.btn-link:hover{color:#1d4ed8}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat-number{font-family:'Oswald',sans-serif;font-size:3.5rem;font-weight:700;color:#38bdf8}
+.stat-label{color:rgba(255,255,255,.8);font-size:1rem;margin-top:4px}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.why-card{padding:32px;border-left:4px solid #2563eb;background:#fff;border-radius:0 12px 12px 0;box-shadow:0 4px 15px rgba(0,0,0,.06);transition:transform .3s}
+.why-card:hover{transform:translateY(-4px)}
+.why-icon{font-size:2rem;margin-bottom:12px;color:#2563eb}
+.why-card h3{font-size:1.1rem;margin-bottom:8px}
+.why-card p{color:#475569;font-size:.95rem}
+.testimonials{background:linear-gradient(rgba(10,22,40,.85),rgba(10,22,40,.9)),url('https://placehold.co/1920x600/0a1628/2563eb?text=REVIEWS') center/cover no-repeat}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial-card{background:#fff;padding:32px;border-radius:12px;border-top:4px solid #2563eb;position:relative}
+.quote-mark{font-size:3rem;color:#2563eb;line-height:1;margin-bottom:8px;font-family:Georgia,serif}
+.review-text{color:#334155;font-size:.95rem;font-style:italic;margin-bottom:16px}
+.reviewer strong{display:block;color:#0a1628}
+.stars{color:#f59e0b;font-size:1.1rem;letter-spacing:2px}
+.areas-wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+.area-pill{padding:10px 24px;border:2px solid #2563eb;border-radius:50px;color:#2563eb;font-weight:600;font-size:.95rem;transition:all .25s;cursor:default}
+.area-pill:hover{background:#2563eb;color:#fff}
+.faq-item{border-left:4px solid #2563eb;margin-bottom:12px;border-radius:0 8px 8px 0;overflow:hidden}
+.faq-item summary{padding:18px 24px;font-family:'Oswald',sans-serif;font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;background:#f8fafc;transition:background .2s}
+.faq-item summary:hover{background:#dbeafe}
+.faq-item[open] summary{background:#2563eb;color:#fff}
+.faq-item[open] .faq-icon{transform:rotate(45deg)}
+.faq-icon{font-size:1.4rem;transition:transform .3s;font-weight:400}
+.faq-answer{padding:20px 24px}
+.faq-answer p{color:#475569}
+.cta-banner{background:#0a1628;padding:60px 24px;text-align:center}
+.cta-banner h2{color:#fff;font-size:2rem;margin-bottom:16px}
+.cta-banner p{color:rgba(255,255,255,.7);margin-bottom:24px}
+.final-cta{text-align:center}
+.final-cta .btn{margin:8px}
+.footer{background:#0a1628;padding:60px 0 24px;color:rgba(255,255,255,.8)}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.footer h4{color:#fff;font-family:'Oswald',sans-serif;font-size:1.1rem;margin-bottom:16px}
+.footer ul{list-style:none}
+.footer li{margin-bottom:8px;font-size:.9rem}
+.footer a{color:rgba(255,255,255,.7);transition:color .2s}
+.footer a:hover{color:#38bdf8}
+.footer-phone{font-size:1.3rem;color:#38bdf8;font-weight:700;display:block;margin-top:12px}
+.footer-bottom{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;color:rgba(255,255,255,.5)}
+.biznify-bar{background:#0a1628;padding:40px 0 32px;border-top:1px solid rgba(255,255,255,.1)}
+.biznify-inner{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.biznify-logo{height:60px;width:auto;margin-bottom:4px}
+.biznify-credit{color:#fff;font-weight:700;font-size:1rem;transition:color .2s}
+.biznify-credit:hover{color:#38bdf8}
+.biznify-copy{color:rgba(255,255,255,.5);font-size:.9rem;font-weight:700}
+.sticky-bar{position:fixed;bottom:0;left:0;width:100%;background:#0a1628;display:flex;justify-content:center;gap:12px;padding:12px 24px;z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
+.sticky-bar .btn{padding:14px 32px;font-size:1rem}
+.sticky-bar{gap:8px;padding:10px 16px}
+@media(max-width:480px){.sticky-bar .btn{padding:12px 20px;font-size:.85rem;letter-spacing:0}}
+.animate-on-scroll{opacity:0;transform:translateY(30px);transition:opacity .6s ease-out,transform .6s ease-out}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+@media(max-width:992px){
+  .services-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:2.8rem}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .services-grid,.testimonials-grid,.why-grid,.stats-grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .section{padding:60px 0}
+  .trust-items{grid-template-columns:repeat(2,1fr);gap:12px}
+  .footer-grid{grid-template-columns:1fr}
+  .section-heading{font-size:1.8rem}
+}
+@media(max-width:480px){
+  .hero{min-height:100svh;padding:100px 20px 60px}
+  .hero h1{font-size:2rem;letter-spacing:0;margin-bottom:12px}
+  .hero .tagline{font-size:1rem;letter-spacing:1px;margin-bottom:6px}
+  .hero .subtitle{font-size:1rem;margin-bottom:24px}
+  .hero-btns{flex-direction:column;align-items:stretch;gap:12px;width:100%;max-width:320px;margin:0 auto}
+  .hero-btns .btn{text-align:center;padding:16px 24px;font-size:1rem;width:100%}
+  .btn{padding:14px 28px;font-size:.95rem}
+  .scroll-arrow{bottom:20px;font-size:1.5rem}
+}
+</style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>LC Junk Removal</h1>
-            <p>Your City's Trusted Home Services Experts - Fast, Reliable, Professional</p>
-            <div class="hero-cta">
-                <a href="tel:+18476513214" class="btn">Call Now: (847) 651-3214</a>
-                <a href="tel:+18476513214" class="btn btn-outline">Free Estimate</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
-        <div class="container">
-            <div class="trust-items">
-                <div class="trust-item">
-                    <span>🛡️</span>Licensed and Insured
-                </div>
-                <div class="trust-item">
-                    <span>💰</span>Free Estimates
-                </div>
-                <div class="trust-item">
-                    <span>⭐</span>5-Star Rated
-                </div>
-                <div class="trust-item">
-                    <span>🏠</span>Locally Owned
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about">
-        <div class="container">
-            <h2>Your Local Home Services Experts in Your City</h2>
-            <p>For over a decade, LC Junk Removal has been Your City's go-to solution for comprehensive home services. We understand that your home is your biggest investment, which is why we deliver professional-grade repairs, installations, and maintenance with unmatched attention to detail.</p>
-            
-            <p>Our licensed technicians combine years of field experience with modern tools and techniques to solve problems efficiently the first time. Whether you're facing an emergency repair, planning a major installation, or need routine maintenance, we provide transparent pricing and guaranteed workmanship that homeowners trust.</p>
-            
-            <p>From small fixes to complex projects, we treat every job with the same level of professionalism and care. That's why families across Your City and surrounding areas have made us their preferred home services partner.</p>
-            
-            <div class="about-cta">
-                <a href="tel:+18476513214" class="btn">Get Your Free Consultation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section section-alt services">
-        <div class="container">
-            <h2>Our Home Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>General Repair</h3>
-                    <p>From leaky faucets to electrical issues, our skilled technicians diagnose problems quickly and deliver lasting repairs using quality materials and proven methods.</p>
-                    <a href="tel:+18476513214" class="btn">Schedule Repair</a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Professional Installation</h3>
-                    <p>Expert installation services for fixtures, appliances, and home systems. We ensure proper setup, optimal performance, and full compliance with local codes.</p>
-                    <a href="tel:+18476513214" class="btn">Book Installation</a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Maintenance Services</h3>
-                    <p>Preventive maintenance programs that keep your home systems running efficiently, helping you avoid costly breakdowns and extend equipment lifespan.</p>
-                    <a href="tel:+18476513214" class="btn">Schedule Service</a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Home Inspection</h3>
-                    <p>Thorough property inspections that identify potential issues before they become expensive problems. Detailed reports with actionable recommendations included.</p>
-                    <a href="tel:+18476513214" class="btn">Book Inspection</a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Emergency Service</h3>
-                    <p>24/7 emergency response for urgent home repairs. When disasters strike, our rapid response team minimizes damage and restores safety quickly.</p>
-                    <a href="tel:+18476513214" class="btn">Emergency Call</a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Expert Consultation</h3>
-                    <p>Professional guidance for home improvement projects, system upgrades, and maintenance planning. Get expert advice to make informed decisions.</p>
-                    <a href="tel:+18476513214" class="btn">Get Consultation</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="section why-choose">
-        <div class="container">
-            <h2>Why Choose LC Junk Removal?</h2>
-            <div class="features-grid">
-                <div class="feature-block">
-                    <div class="icon">🔧</div>
-                    <h3>Proven Experience</h3>
-                    <p>Over 15 years of hands-on experience in residential home services. Our master technicians have seen it all and know how to handle any challenge with precision and efficiency.</p>
-                </div>
-                
-                <div class="feature-block">
-                    <div class="icon">✅</div>
-                    <h3>Quality Guaranteed</h3>
-                    <p>We stand behind every job with comprehensive warranties and quality guarantees. If you're not completely satisfied, we'll make it right at no additional cost.</p>
-                </div>
-                
-                <div class="feature-block">
-                    <div class="icon">📍</div>
-                    <h3>Local Knowledge</h3>
-                    <p>As longtime Your City residents, we understand local building codes, common home issues, and seasonal challenges. This knowledge helps us work faster and more effectively.</p>
-                </div>
-                
-                <div class="feature-block">
-                    <div class="icon">😊</div>
-                    <h3>100% Satisfaction</h3>
-                    <p>Your complete satisfaction is our primary goal. We communicate clearly, arrive on time, work cleanly, and don't consider the job done until you're thrilled with the results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Areas -->
-    <section class="section section-alt service-areas">
-        <div class="container">
-            <h2>Serving Your City and Surrounding Communities</h2>
-            <p>We're proud to serve homeowners throughout Your City and the greater metropolitan area. Our local presence means faster response times and personalized service from technicians who know your neighborhood.</p>
-            
-            <div class="areas-list">
-                <a href="#" class="area-tag">Your City</a>
-                <a href="#" class="area-tag">Downtown Your City</a>
-                <a href="#" class="area-tag">North Your City</a>
-                <a href="#" class="area-tag">South Your City</a>
-                <a href="#" class="area-tag">East Your City</a>
-                <a href="#" class="area-tag">West Your City</a>
-                <a href="#" class="area-tag">Your City Heights</a>
-                <a href="#" class="area-tag">Your City Gardens</a>
-                <a href="#" class="area-tag">Your City Hills</a>
-                <a href="#" class="area-tag">Greater Your City Area</a>
-            </div>
-            
-            <p style="text-align: center; margin-top: 30px;">Don't see your area listed? <a href="tel:+18476513214" style="color: #e74c3c; text-decoration: none; font-weight: 600;">Call us at (847) 651-3214</a> - we likely service your location too!</p>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section how-it-works">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Call for Service</h3>
-                    <p>Contact us by phone to describe your home service needs. We'll ask a few questions to understand the scope and urgency of your project.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Free Estimate</h3>
-                    <p>We'll schedule a convenient time to assess the work and provide you with a detailed, no-obligation estimate. All quotes are completely free.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Expert Service</h3>
-                    <p>Our licensed professionals arrive on time, work efficiently, and complete the job to your satisfaction. We clean up and ensure everything works perfectly.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section section-alt faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <details class="faq-item">
-                    <summary>How much do your home services cost?</summary>
-                    <p>Our pricing varies based on the specific service, materials needed, and complexity of the work. We provide free, detailed estimates for all jobs so you know exactly what to expect. Most routine repairs range from $150-$500, while larger installations may vary. We believe in transparent, upfront pricing with no hidden fees.</p>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>How quickly can you respond to service calls?</summary>
-                    <p>For standard appointments, we typically schedule within 24-48 hours. Emergency services are available 24/7 with response times under 2 hours for urgent situations like water leaks, electrical hazards, or heating/cooling failures. We understand that home problems can't wait.</p>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Are you licensed and insured?</summary>
-                    <p>Yes, LC Junk Removal is fully licensed for all home services we provide and carries comprehensive liability insurance. Our technicians hold current certifications and participate in ongoing training. We can provide proof of licensing and insurance upon request.</p>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Do you offer warranties on your work?</summary>
-                    <p>Absolutely. We provide written warranties on all workmanship, typically ranging from 90 days to 2 years depending on the service. Parts and materials come with manufacturer warranties that we help you navigate. If anything goes wrong, we'll return to fix it at no charge.</p>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Do you handle emergency repairs?</summary>
-                    <p>Yes, we offer 24/7 emergency service for urgent situations that threaten your safety or property. This includes water leaks, electrical problems, heating failures, and security issues. Emergency calls are prioritized and typically receive same-day service.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Don't let home problems get worse. Contact LC Junk Removal today for fast, professional service you can trust.</p>
-            <div class="final-cta-buttons">
-                <a href="tel:+18476513214" class="btn">Call (847) 651-3214</a>
-                <a href="tel:+18476513214" class="btn">Free Estimate</a>
-                <a href="tel:+18476513214" class="btn">Emergency Service</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>LC Junk Removal</h3>
-                    <p>Your City, ST</p>
-                    <p><a href="tel:+18476513214" style="color: #e74c3c; text-decoration: none;">(847) 651-3214</a></p>
-                    <p>Professional home services you can trust</p>
-                </div>
-                
-                <div>
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="#services">General Repair</a></li>
-                        <li><a href="#services">Installation</a></li>
-                        <li><a href="#services">Maintenance</a></li>
-                        <li><a href="#services">Inspection</a></li>
-                        <li><a href="#services">Emergency Service</a></li>
-                        <li><a href="#services">Consultation</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3>Service Areas</h3>
-                    <ul>
-                        <li><a href="#">Your City</a></li>
-                        <li><a href="#">North Your City</a></li>
-                        <li><a href="#">South Your City</a></li>
-                        <li><a href="#">East Your City</a></li>
-                        <li><a href="#">West Your City</a></li>
-                        <li><a href="#">Surrounding Areas</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3>Why Choose Us</h3>
-                    <ul>
-                        <li>Licensed & Insured</li>
-                        <li>Free Estimates</li>
-                        <li>24/7 Emergency Service</li>
-                        <li>Satisfaction Guaranteed</li>
-                        <li>Local Experts</li>
-                        <li>Quality Workmanship</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 LC Junk Removal. All rights reserved. | Licensed Home Services in Your City, ST</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Sticky Bottom Bar -->
-    <div class="sticky-bar">
-        <div class="sticky-buttons">
-            <a href="tel:+18476513214" class="btn">📞 Call Now</a>
-            <a href="tel:+18476513214" class="btn">💰 Free Quote</a>
-        </div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">Lc Junk Removal</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <div class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
+      <span></span><span></span><span></span>
     </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="nav-cta">Get a Quote</a>
+  <a href="#services" onclick="this.parentElement.classList.remove('open')">Services</a>
+  <a href="#about" onclick="this.parentElement.classList.remove('open')">About</a>
+  <a href="#areas" onclick="this.parentElement.classList.remove('open')">Areas</a>
+  <a href="#reviews" onclick="this.parentElement.classList.remove('open')">Reviews</a>
+  <a href="#faq" onclick="this.parentElement.classList.remove('open')">FAQ</a>
+</div>
+
+<section class="hero">
+  <div>
+    <div class="tagline">Buffalo Grove's Fast Junk Removal Experts</div>
+    <h1>Lc Junk Removal</h1>
+    <p class="subtitle">Same-day service available! Get your space back today with our professional junk removal team.</p>
+    <div class="hero-btns">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Get a Free Quote</a>
+      <a href="tel:8476513214" class="btn btn-outline">Call (847) 651-3214</a>
+    </div>
+  </div>
+  <div class="scroll-arrow">&#8595;</div>
+</section>
+
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><span>&#10004;</span>Licensed &amp; Insured</div>
+      <div class="trust-item"><span>&#9733;</span>500+ Projects</div>
+      <div class="trust-item"><span>&#9733;</span>5-Star Rated</div>
+      <div class="trust-item"><span>&#9742;</span>Free Estimates</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Buffalo Grove's Trusted Junk Removal Company</h2>
+    <div class="accent-line"></div>
+    <div class="about-grid">
+      <div class="about-text animate-on-scroll">
+        <p>LC Junk Removal has been serving Buffalo Grove, IL families and businesses for over 8 years. We understand how overwhelming clutter can become and how it affects your daily life. Our experienced team specializes in fast, reliable junk removal that transforms your space in hours, not days. From single furniture pieces to complete estate cleanouts, we handle every job with care and professionalism. As your local Buffalo Grove neighbors, we're committed to providing honest pricing, on-time service, and eco-friendly disposal methods. We're licensed, insured, and dedicated to exceeding your expectations. When you need your space cleared quickly and efficiently, Buffalo Grove residents trust LC Junk Removal to get the job done right the first time.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary" style="margin-top:24px">Get Your Free Estimate</a>
+      </div>
+      <div class="about-img animate-on-scroll">
+        <img src="https://placehold.co/800x600/0a1628/2563eb?text=ABOUT+US" alt="Lc Junk Removal team" width="800" height="600" loading="lazy" onerror="this.src='https://placehold.co/800x600/0a1628/2563eb?text=Lc%20Junk%20Removal'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Love What You See? This Could Be YOUR Website.</h2>
+  <p>We build high-converting websites like this for home service businesses — fast, affordable, and done for you.</p>
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Claim Your Site Today</a>
+</section>
+
+<section class="section section-light" id="services">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Our Services</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub animate-on-scroll">Professional junk removal solutions for every need in bufallo grove and beyond.</p>
+    <div class="services-grid">
+    <div class="service-card animate-on-scroll" style="animation-delay:0ms">
+      <img src="https://placehold.co/600x400/dbeafe/2563eb?text=Service+1" alt="Furniture Removal" width="600" height="400" loading="lazy" onerror="this.src='https://placehold.co/600x400/dbeafe/2563eb?text=Furniture%20Removal'">
+      <div class="service-card-body">
+        <h3>Furniture Removal</h3>
+        <p>Heavy furniture got you stuck? We safely remove couches, beds, dressers, and appliances from any floor or tight space. Our team handles all the heavy lifting so you don't have to.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn-link">Get a Free Quote &rarr;</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll" style="animation-delay:100ms">
+      <img src="https://placehold.co/600x400/dbeafe/2563eb?text=Service+2" alt="Junk Removal" width="600" height="400" loading="lazy" onerror="this.src='https://placehold.co/600x400/dbeafe/2563eb?text=Junk%20Removal'">
+      <div class="service-card-body">
+        <h3>Junk Removal</h3>
+        <p>Clear out years of accumulated clutter fast with our comprehensive junk removal service. We haul away everything from old electronics to construction debris, leaving your space spotless.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn-link">Get a Free Quote &rarr;</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll" style="animation-delay:200ms">
+      <img src="https://placehold.co/600x400/dbeafe/2563eb?text=Service+3" alt="Estate Cleanouts" width="600" height="400" loading="lazy" onerror="this.src='https://placehold.co/600x400/dbeafe/2563eb?text=Estate%20Cleanouts'">
+      <div class="service-card-body">
+        <h3>Estate Cleanouts</h3>
+        <p>Complete property cleanouts handled with respect and efficiency during difficult times. We sort, donate usable items, and responsibly dispose of everything else, making the process stress-free.</p>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn-link">Get a Free Quote &rarr;</a>
+      </div>
+    </div></div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary animate-on-scroll">Get a Free Quote on Any Service</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="animate-on-scroll"><div class="stat-number" data-target="500">0</div><div class="stat-label">Projects Completed</div></div>
+      <div class="animate-on-scroll" style="animation-delay:100ms"><div class="stat-number" data-target="15">0</div><div class="stat-label">Years Experience</div></div>
+      <div class="animate-on-scroll" style="animation-delay:200ms"><div class="stat-number" data-target="100">0</div><div class="stat-label">% Satisfaction</div></div>
+      <div class="animate-on-scroll" style="animation-delay:300ms"><div class="stat-number" data-target="24">0</div><div class="stat-label">/7 Availability</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Why bufallo grove Trusts Lc Junk Removal</h2>
+    <div class="accent-line"></div>
+    <div class="why-grid">
+    <div class="why-card animate-on-scroll" style="animation-delay:0ms">
+      <div class="why-icon">&#9733;</div>
+      <h3>8+ Years Experience</h3>
+      <p>We've completed over 2,000 junk removal jobs in Buffalo Grove. Our experienced team knows how to handle any removal challenge safely and efficiently.</p>
+    </div>
+    <div class="why-card animate-on-scroll" style="animation-delay:100ms">
+      <div class="why-icon">&#9883;</div>
+      <h3>Premium Quality Service</h3>
+      <p>Professional uniformed crew arrives on time with commercial-grade equipment. We protect your property and clean up completely before we leave.</p>
+    </div>
+    <div class="why-card animate-on-scroll" style="animation-delay:200ms">
+      <div class="why-icon">&#9873;</div>
+      <h3>Local Buffalo Grove Experts</h3>
+      <p>We know Buffalo Grove neighborhoods, building restrictions, and disposal regulations. As your neighbors, we're invested in serving our community right.</p>
+    </div>
+    <div class="why-card animate-on-scroll" style="animation-delay:300ms">
+      <div class="why-icon">&#10004;</div>
+      <h3>100% Satisfaction Guarantee</h3>
+      <p>If you're not completely satisfied with our junk removal service, we'll make it right or refund your money. Your satisfaction is our reputation.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Want a Website Like This for Your Business?</h2>
+  <p>Get a stunning, mobile-ready site built in 24 hours. No tech skills needed. We handle everything.</p>
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Get Your Site Live Today</a>
+</section>
+
+<section class="section testimonials" id="reviews">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll" style="color:#fff">What bufallo grove Homeowners Say</h2>
+    <div class="accent-line"></div>
+    <div class="testimonials-grid">
+    <div class="testimonial-card animate-on-scroll" style="animation-delay:0ms">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="review-text">LC Junk Removal cleared out my entire basement in Buffalo Grove in just 2 hours. They were professional, fast, and the price was exactly what they quoted. I couldn't believe how easy they made such a big job. Highly recommend!</p>
+      <div class="reviewer">
+        <strong>Sarah Martinez</strong>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div>
+    <div class="testimonial-card animate-on-scroll" style="animation-delay:100ms">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="review-text">Used them for furniture removal when I moved. They handled my heavy sectional sofa and dining room set with care and got it done same day. Great service in Buffalo Grove and fair pricing too.</p>
+      <div class="reviewer">
+        <strong>Mike Thompson</strong>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div>
+    <div class="testimonial-card animate-on-scroll" style="animation-delay:200ms">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="review-text">After my father passed, LC Junk Removal helped with the estate cleanout. They were respectful, thorough, and made a difficult time much easier. They even donated items that were still good. Thank you so much.</p>
+      <div class="reviewer">
+        <strong>Jennifer Chen</strong>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section class="section section-light" id="areas">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll">Proudly Serving bufallo grove &amp; Surrounding Areas</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub animate-on-scroll">Lc Junk Removal is proud to offer professional junk removal services across bufallo grove and neighboring communities.</p>
+    <div class="areas-wrap animate-on-scroll"><span class="area-pill">buffalo grove iL</span></div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary animate-on-scroll">Not Sure If We Cover Your Area? Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container" style="max-width:800px">
+    <h2 class="section-heading animate-on-scroll">Frequently Asked Questions</h2>
+    <div class="accent-line"></div>
+    
+    <details class="faq-item animate-on-scroll">
+      <summary>How quickly can you remove my junk?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Most Buffalo Grove junk removal jobs are completed same day or next day. We offer flexible scheduling including evenings and weekends. Call now and we'll give you an exact timeframe for your specific needs.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>Do you provide free estimates?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Yes! We provide free, no-obligation estimates for all junk removal services in Buffalo Grove. We can often give you a quote over the phone, or we'll come to your property for larger jobs.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>What items can you remove?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>We remove almost everything including furniture, appliances, electronics, construction debris, and household clutter. We cannot remove hazardous materials like paint, chemicals, or asbestos. Call us to discuss your specific items.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>Are you licensed and insured?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Absolutely! LC Junk Removal is fully licensed and insured for your protection. We carry comprehensive liability insurance and our team is trained in safe removal practices.</p></div>
+    </details>
+    <details class="faq-item animate-on-scroll">
+      <summary>How much does junk removal cost?<span class="faq-icon">+</span></summary>
+      <div class="faq-answer"><p>Pricing depends on volume and type of items being removed. Most Buffalo Grove residential jobs range from $150-$600. We provide upfront pricing with no hidden fees before we start any work.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="section section-dark final-cta">
+  <div class="container">
+    <h2 class="section-heading animate-on-scroll" style="color:#fff">Don't Wait - Your Clutter Won't Remove Itself!</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub animate-on-scroll">Every day you wait, that junk takes up more of your valuable space. Call LC Junk Removal now for same-day service in Buffalo Grove!</p>
+    <div class="animate-on-scroll">
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">Get Free Quote</a>
+      <a href="tel:8476513214" class="btn btn-primary">Call (847) 651-3214</a>
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-outline">Book Consultation</a>
+    </div>
+    <div style="margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.15)" class="animate-on-scroll">
+      <p style="color:rgba(255,255,255,.6);font-size:.95rem;margin-bottom:12px">Want a website like this for your business?</p>
+      <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-outline" style="border-color:#38bdf8;color:#38bdf8">Claim Your Site &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Lc Junk Removal</h4>
+        <p>bufallo grove, ST</p>
+        <a href="tel:8476513214" class="footer-phone">(847) 651-3214</a>
+        <p style="margin-top:12px;font-size:.85rem">Licensed &amp; Insured<br>Locally Owned &amp; Operated</p>
+      </div>
+      <div><h4>Services</h4><ul><li>Furniture Removal</li><li>Junk Removal</li><li>Estate Cleanouts</li></ul></div>
+      <div><h4>Service Areas</h4><ul><li>buffalo grove iL</li></ul></div>
+      <div>
+        <h4>Get Started</h4>
+        <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary" style="display:block;text-align:center;margin-bottom:12px">Get a Quote</a>
+        <a href="tel:8476513214" class="btn btn-outline" style="display:block;text-align:center;border-color:#38bdf8;color:#38bdf8">Call Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Lc Junk Removal. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="biznify-bar">
+  <div class="container">
+    <div class="biznify-inner">
+      <a href="https://biznifysolutions.com/" target="_blank"><img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/dlQv88jBaatY0zenjfDK/media/044d3ad7-6368-429a-b003-9e39b1f8db33.png" alt="Biznify Solutions" class="biznify-logo"></a>
+      <a href="https://biznifysolutions.com/" target="_blank" class="biznify-credit">Designed &amp; Developed by Biznify Solutions</a>
+      <span class="biznify-copy">&copy; Copyright 2026 Biznify Solutions</span>
+    </div>
+  </div>
+</div>
+
+<div class="sticky-bar">
+  <a href="https://biznifysolutions.com/claim-your-site" target="_blank" class="btn btn-primary">&#9993; Get a Quote</a>
+  <a href="tel:8476513214" class="btn btn-outline" style="border-color:#38bdf8;color:#38bdf8">&#9742; Call Now</a>
+</div>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.animate-on-scroll').forEach(el=>obs.observe(el));
+const counterObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.target);let current=0;const step=Math.max(1,Math.floor(target/60));const timer=setInterval(()=>{current+=step;if(current>=target){current=target;clearInterval(timer)}el.textContent=current+(target>=100&&target<1000?'%':'+')},25);counterObs.unobserve(el)}})},{threshold:0.5});
+document.querySelectorAll('.stat-number').forEach(el=>counterObs.observe(el));
+</script>
 </body>
 </html>
